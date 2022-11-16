@@ -19,10 +19,10 @@
             "dropdownTitle": "About HEKORS 💻",
             "dropdownDescription": "Learn more about our community and philosophy",
             "dropdownOptionsList": [
-                { "label": "FAQ", "path": "/faq" },
-                { "label": "Community Narratives", "path": "/community-narratives" },
-                { "label": "Collaborate with HEKORS", "path": "/collab-with-hekors" },
-                { "label": "Contact Us", "path": "/contact-us" }
+                { "label": "FAQ", "description": "", "path": "/faq" },
+                { "label": "Community Narratives", "description": "", "path": "/community-narratives" },
+                { "label": "Collaborate with HEKORS", "description": "", "path": "/collab-with-hekors" },
+                { "label": "Contact Us", "description": "", "path": "/contact-us" }
             ]
         }
     },
