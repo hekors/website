@@ -20,7 +20,7 @@ export default function Navbar() {
                 </span>
             </Link>
             <div className="navbar-options-list-wrapper">
-                <ul className="navbar-options-list">
+                <ul className="navbar-options-list flex flex-row items-center justify-end gap-8">
                     {navbarOptionsRef?.current?.map((navbarOption, navbarOptionIndex) => (
                         navbarOption?.isDropdown
                             ? <DropdownMenu.Root key={navbarOptionIndex}>
@@ -60,9 +60,9 @@ export default function Navbar() {
                                 </DropdownMenu.Portal>
                             </DropdownMenu.Root>
                             : <Link href={navbarOption?.path || "/"} 
-                                className="" 
+                                className="navbar-option-button text-sm text-gray-600 font-normal font-sans" 
                                 key={navbarOptionIndex}>
-
+                                    {navbarOption?.label}
                                 </Link>
                     ))}
                 </ul>
