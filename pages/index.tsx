@@ -1,7 +1,8 @@
+
 export default function Home() {
   return (
-    <div className="home">
-      Home Sweet Home
+    <div className="home page-content page-view">
+      
     </div>
   )
 }

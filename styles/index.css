@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    @apply bg-white;
+}
+
+.page-view {
+    @apply mx-auto;
+    max-width: 1180px;
+}
+
+.page-content {
+    @apply my-12;
+}
