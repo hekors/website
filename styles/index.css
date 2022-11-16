@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* importing component module styles */
+@import url('./navbar-styles.css');
+
 html, body {
     @apply bg-white;
 }

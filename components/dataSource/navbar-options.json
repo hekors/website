@@ -1,0 +1,20 @@
+[
+    {
+        "label": "Events",
+        "isDropdown": true,
+        "dropdownContent": {
+            "dropdownTitle": "Events 🗓️",
+            "dropdownDescription": "Checkout our latest and upcoming events 🚀",
+            "dropdownOptionsList": [
+                { "label": "Hackathons", "description": "Learn in groups, build solutions and grow together", "path": "/events/hackathons" },
+                { "label": "Offline Meetups", "description": "We're actively participating in offline events & meetups", "path": "/events/offline-meetups" },
+                { "label": "Educational Sessions", "description": "Learn real-world skills, engineering and designing", "path": "/events/educational-sessions" }
+            ]
+        }
+    },
+    {
+        "label": "Join us",
+        "isDropdown": false,
+        "path": "/join-hekors"
+    }
+]
