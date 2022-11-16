@@ -6,7 +6,7 @@ import NavbarOptionsData from './dataSource/navbar-options.json';
 
 // Radix UI Components and Icons
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
-import { CaretDownIcon } from '@radix-ui/react-icons';
+import { CaretDownIcon, CaretRightIcon } from '@radix-ui/react-icons';
 
 export default function Navbar() {
     const navbarOptionsRef = useRef(NavbarOptionsData);
@@ -45,14 +45,19 @@ export default function Navbar() {
                                         {navbarOption?.dropdownContent?.dropdownOptionsList?.map((dropdownOption, dropdownOptionIndex: number) => (
                                             <DropdownMenu.Item className="DropdownMenuItem mb-2" key={dropdownOptionIndex}>
                                                 <Link href={dropdownOption?.path}>
-                                                    <div className="navbar-dropdown-option-content-wrapper px-3 py-1.5 bg-gray-50 border border-gray-100 hover:bg-gray-100 hover:border-gray-200 rounded-md">
-                                                        <h4 className="navbar-dropdown-option-title text-sm font-semibold text-gray-800 font-sans">
-                                                            {dropdownOption?.label}
-                                                        </h4>
-                                                        {dropdownOption?.description 
-                                                            && <p className="navbar-dropdown-option-description text-xs font-normal text-gray-400 font-sans">
-                                                                {dropdownOption?.description}
-                                                            </p>}
+                                                    <div className="navbar-dropdown-option-content-wrapper flex flex-row items-center px-3 py-1.5 bg-gray-50 border border-gray-100 hover:bg-gray-100 hover:border-gray-200 rounded-md">
+                                                        <div className="">
+                                                            <h4 className="navbar-dropdown-option-title text-sm font-semibold text-gray-800 font-sans">
+                                                                {dropdownOption?.label}
+                                                            </h4>
+                                                            {dropdownOption?.description 
+                                                                && <p className="navbar-dropdown-option-description text-xs font-normal text-gray-400 font-sans">
+                                                                    {dropdownOption?.description}
+                                                                </p>}
+                                                            </div>
+                                                        <div className="RightSlot">
+                                                            <CaretRightIcon />
+                                                        </div>
                                                     </div>
                                                 </Link>
                                             </DropdownMenu.Item>
