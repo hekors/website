@@ -21,7 +21,7 @@ export default function Navbar() {
             </Link>
             <div className="navbar-options-list-wrapper">
                 <ul className="navbar-options-list flex flex-row items-center justify-end gap-8">
-                    {navbarOptionsRef?.current?.map((navbarOption, navbarOptionIndex) => (
+                    {navbarOptionsRef?.current?.map((navbarOption, navbarOptionIndex: number) => (
                         navbarOption?.isDropdown
                             ? <DropdownMenu.Root key={navbarOptionIndex}>
                                 <DropdownMenu.Trigger asChild>
@@ -42,16 +42,17 @@ export default function Navbar() {
                                                 {navbarOption?.dropdownContent?.dropdownDescription}
                                             </p>
                                         </div>
-                                        {navbarOption?.dropdownContent?.dropdownOptionsList?.map((dropdownOption, dropdownOptionIndex) => (
+                                        {navbarOption?.dropdownContent?.dropdownOptionsList?.map((dropdownOption, dropdownOptionIndex: number) => (
                                             <DropdownMenu.Item className="DropdownMenuItem mb-2" key={dropdownOptionIndex}>
                                                 <Link href={dropdownOption?.path}>
                                                     <div className="navbar-dropdown-option-content-wrapper px-3 py-1.5 bg-gray-50 border border-gray-100 hover:bg-gray-100 hover:border-gray-200 rounded-md">
                                                         <h4 className="navbar-dropdown-option-title text-sm font-semibold text-gray-800 font-sans">
                                                             {dropdownOption?.label}
                                                         </h4>
-                                                        <p className="navbar-dropdown-option-description text-xs font-normal text-gray-400 font-sans">
-                                                            {dropdownOption?.description}
-                                                        </p>
+                                                        {dropdownOption?.description 
+                                                            && <p className="navbar-dropdown-option-description text-xs font-normal text-gray-400 font-sans">
+                                                                {dropdownOption?.description}
+                                                            </p>}
                                                     </div>
                                                 </Link>
                                             </DropdownMenu.Item>

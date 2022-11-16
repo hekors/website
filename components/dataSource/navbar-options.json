@@ -30,5 +30,10 @@
         "label": "Join us",
         "isDropdown": false,
         "path": "/join-hekors"
+    },
+    {
+        "label": "Discord",
+        "isDropdown": false,
+        "path": "https://discord.com/invite/muKCDkmGEX"
     }
 ]
