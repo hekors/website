@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import HeadlineType from "./headline-type";
 
 export default function Headline({children, size, className, id}: HeadlineType) {
     const [headlineSize, setHeadlineSize] = useState("hkrs-headline-lg");
