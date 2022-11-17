@@ -1,0 +1,32 @@
+
+.hkrs-headline {
+    @apply font-sans leading-snug;
+}
+
+.hkrs-headline-lg {
+    @apply text-lg font-semibold;
+}
+
+.hkrs-headline-xl {
+    @apply text-xl font-semibold;
+}
+
+.hkrs-headline-2xl {
+    @apply text-2xl font-semibold;
+}
+
+.hkrs-headline-3xl {
+    @apply text-3xl font-bold;
+}
+
+.hkrs-headline-4xl {
+    @apply text-4xl font-bold;
+}
+
+.hkrs-headline-5xl {
+    @apply text-5xl font-bold;
+}
+
+.hkrs-headline-6xl {
+    @apply text-6xl font-bold;
+}

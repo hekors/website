@@ -5,6 +5,10 @@
 /* importing component module styles */
 @import url('./navbar-styles.css');
 
+/* importing components/ui-pattern module styles */
+@import url('./button-styles.css');
+@import url('./headline-styles.css');
+
 html, body {
     @apply bg-white;
 }
@@ -16,4 +20,17 @@ html, body {
 
 .page-content {
     @apply my-12;
+}
+
+.page-header-section {
+    @apply mt-8 py-16;
+    background-image: url('/hekors-gradient.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-hero-section {
+    background-image: url('/landing-hero-section-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

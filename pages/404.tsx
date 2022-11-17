@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "../components/ui-patterns/Button";
 
 export default function ErrorPage404() {
     return (
@@ -9,12 +10,10 @@ export default function ErrorPage404() {
                 {"Don't worry, Only the page is wrong, not the community"}
             </h1>
             <div className="mx-auto w-fit h-auto flex flex-row items-center justify-between gap-6 mt-6">
-                <Link href="/">
-                    <button className="back-to-home-btn text-gray-600 font-semibold px-5 py-3 rounded-md bg-gray-100 hover:bg-gray-200">{"Go to Home"}</button>
-                </Link>
-                <Link href="https://discord.gg/7vJN6CvBFG" target="_blank">
-                    <button className="back-to-home-btn text-white font-semibold px-5 py-3 rounded-md bg-blue-500 hover:bg-blue-600">{"Join Discord"}</button>
-                </Link>
+                <Button type={"default"} size={"large"} hasLink={true} link={"/"}>{"Go to Home"}</Button>
+                <Button type={"solid"} size={"large"} hasLink={true} link={"https://discord.gg/7vJN6CvBFG"}>
+                    {"Join Discord"}
+                </Button>
             </div>
         </div>
     )

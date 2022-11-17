@@ -7,6 +7,7 @@ import NavbarOptionsData from './dataSource/navbar-options.json';
 // Radix UI Components and Icons
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { CaretDownIcon, CaretRightIcon } from '@radix-ui/react-icons';
+import Button from "./ui-patterns/Button";
 
 export default function Navbar() {
     const navbarOptionsRef = useRef(NavbarOptionsData);
@@ -71,6 +72,9 @@ export default function Navbar() {
                                     {navbarOption?.label}
                                 </Link>
                     ))}
+                    <Button type={"solid"} size={"large"} hasLink={true} link={"/events"}>
+                        {"Attend an Event"}
+                    </Button>
                 </ul>
             </div>
         </div>
