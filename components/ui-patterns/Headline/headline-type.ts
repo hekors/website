@@ -5,3 +5,5 @@ type HeadlineType = {
     className?: string,
     id?: string
 };
+
+export default HeadlineType;
