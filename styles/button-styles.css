@@ -9,7 +9,7 @@
 }
 
 .hkrs-button-solid {
-    @apply text-white bg-orange-500 hover:bg-orange-600;
+    @apply text-white bg-indigo-500 hover:bg-indigo-600;
 }
 
 /* Button Size Variants */
