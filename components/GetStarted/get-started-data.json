@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Open Source",
+        "bgColor": "bg-product-red",
+        "description": "Get started by contributing to open source projects with a wide range of technology stack - Such as React"
+    },
+    {
+        "title": "Designing Sessions",
+        "bgColor": "bg-product-purple-light",
+        "description": "Join our sprint based design sessions on Discord. Learn about UX Design, UI Design/Dev, Design Systems Engineering, Graphic Design and building some cool stuff"
+    },
+    {
+        "title": "Hackathons with MLH",
+        "bgColor": "bg-product-yellow",
+        "description": "We actively participate in MLH organized hackathons and events. Join HEKORS guild and learn through building cool projects - Build your project portfolio"
+    },
+    {
+        "title": "Offline Meetups",
+        "bgColor": "bg-white",
+        "description": "Join us in offline meetups where we connect in person with all the community members. Checkout for upcoming offline meetups."
+    }
+]
