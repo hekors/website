@@ -5,3 +5,29 @@
 /* importing style modules */
 @import url('./typography.css');
 @import url('./button-styles.css');
+
+body, html {
+  @apply font-product-manrope;
+}
+
+.wrapped-view {
+  @apply mx-auto;
+  max-width: 1200px;
+}
+
+.image-squircle {
+  border-radius: 8px;
+}
+
+.checks-container {
+  background-image: url('../public/checks-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @apply py-24;
+}
+
+/* for layout debugging: REMOVE BEFORE DEPLOYING TO PROD */
+/* * {
+  @apply border border-red-400;
+} */
