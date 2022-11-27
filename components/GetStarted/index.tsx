@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import GetStartedData from './get-started-data.json';
 
 type GetStartedItemType = {
@@ -21,20 +21,49 @@ export default function GetStarted() {
 
                 <div className="get-started-items-carousel-wrapper mt-12 flex flex-row items-start justify-start gap-12">
                     {getStartedRef.current?.map((getStartedItem: GetStartedItemType, getStartedIndex: number) => (
-                        <div className="get-started-item" key={getStartedIndex}>
-                            <div className={`get-started-item__card-wrapper rounded-md flex flex-col 
-                                items-start justify-end px-4 pb-6 w-[200px] h-[160px] text-white shadow 
-                                hover:scale-105 transition-all cursor-pointer select-none ${getStartedItem.bgColor}`}
-                            >
-                                <span className="get-started-item__title font-semibold text-xl">{getStartedItem.title}</span>
-                            </div>
-                            <div className="get-started-item__description mt-4 text-xs text-white text-opacity-40 font-semibold tracking-wide w-[200px] leading-6">
-                                {getStartedItem.description}
-                            </div>
-                        </div>
+                        <GetStartedItem 
+                            key={getStartedIndex}
+                            title={getStartedItem?.title}
+                            bgColor={getStartedItem?.bgColor}
+                            description={getStartedItem?.description}
+                        />
                     ))}
                 </div>
             </div>
         </section>
+    )
+}
+
+function GetStartedItem({ title, bgColor="bg-white", description }: GetStartedItemType, props: any) {
+    const [backgroundColor, setBackgroundColor] = useState(bgColor);
+    const [cardTextColor, setCardTextColor] = useState("text-[#181818]");
+
+    useEffect(() => {
+        switch (bgColor) {
+            case "bg-product-red": setBackgroundColor("bg-product-red"); break;
+            case "bg-product-purple-light": setBackgroundColor("bg-product-purple-light"); break;
+            case "bg-product-yellow": setBackgroundColor("bg-product-yellow"); break;
+            case "bg-white": setBackgroundColor("bg-white"); break;
+        }
+    }, [bgColor]);
+
+    useEffect(() => {
+        if (["bg-product-red", "bg-product-purple-light"].includes(backgroundColor)) {
+            setCardTextColor("text-white");
+        }
+    }, [backgroundColor]);
+    
+    return (
+        <div className="get-started-item" {...props}>
+            <div className={`get-started-item__card-wrapper rounded-md flex flex-col 
+                items-start justify-end px-4 pb-6 w-[240px] h-[160px] shadow
+                hover:scale-105 transition-all cursor-pointer select-none ${backgroundColor} ${cardTextColor}`}
+            >
+                <span className="get-started-item__title font-bold text-xl">{title}</span>
+            </div>
+            <div className="get-started-item__description mt-4 text-xs text-white text-left text-opacity-40 font-semibold tracking-wide w-[240px] leading-6">
+                {description}
+            </div>
+        </div>
     )
 }

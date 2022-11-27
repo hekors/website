@@ -2,6 +2,7 @@ import Link from "next/link";
 import Callout from "../components/Callout";
 import EmojiLayer from "../components/EmojiLayer";
 import GetStarted from "../components/GetStarted";
+import OrganizeWithUs from "../components/OrganizeWithUs";
 import Button from "../components/ui-patterns/Button";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <EmojiLayer />
       </div>
       <GetStarted />
+      <OrganizeWithUs />
     </div>
   )
 }
