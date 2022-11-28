@@ -23,6 +23,7 @@
     "autoprefixer": "^10.4.13",
     "css-houdini-squircle": "^0.2.1",
     "postcss": "^8.4.19",
+    "react-icons": "^4.6.0",
     "tailwindcss": "^3.2.4"
   }
 }
