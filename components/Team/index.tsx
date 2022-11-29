@@ -1,31 +1,25 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRef } from 'react';
-import TeamMembersData from './team-data.json';
+import { useEffect, useState } from 'react';
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-
-type TeamMemberCardType = {
-    picture?: string | any,
-    fullName?: any | {
-        firstName?: string | any,
-        lastName?: string | any
-    },
-    isAvenger?: boolean,
-    directWebsite?: {
-        label?: string | any,
-        link?: string | any
-    } | any,
-    socialProfile?: {
-        twitterUsername?: string | any,
-        instagramUsername?: string | any,
-        linkedInUsername?: string | any,
-        githubUsername?: string | any
-    } | any,
-    description?: string | any
-};
+import { TeamMemberCardType } from '../../types/team-type';
+import { getTeamData } from '../../middleware/teams-api';
 
 export default function Team() {
-    const teamMembersDataRef = useRef(TeamMembersData);
+    const [teamMembersData, setTeamMembersData] = useState([]);
+
+    useEffect(() => {
+        (async () => {
+            // setTeamMembersData(await getTeamData());
+            await getTeamData().then(dataResponse => {
+                console.log("logging from team", dataResponse)
+                setTeamMembersData(dataResponse);
+            }).catch(err => {
+                console.log("Error log from Teams Page: ", err);
+            })
+        }).call({});
+        console.log("data from component: ", teamMembersData)
+    }, []);
 
     return (
         <section className="team-section py-24 my-12 bg-product-purple-dark">
@@ -40,7 +34,7 @@ export default function Team() {
                 </h1>
 
                 <div className="team-members-list-wrapper mt-12 flex flex-row items-start justify-start gap-12">
-                    {teamMembersDataRef.current?.map((teamMember: TeamMemberCardType, teamMemberIndex: number) => (
+                    {teamMembersData?.map((teamMember: TeamMemberCardType, teamMemberIndex: number) => (
                         <TeamMemberCard 
                             picture={teamMember?.picture}
                             fullName={{ 
@@ -73,7 +67,7 @@ function TeamMemberCard({
     return (
         <div className="team-member-card-wrapper flex flex-col items-start justify-start gap-3 w-fit max-w-[280px]" {...props}>
             <div className="team-member-picture-cotainer relative border-2 border-white">
-                <Image src={`/team/${picture}`} alt="team-mate" width="280" height="370" 
+                <Image src={picture} alt="team-mate" width="280" height="370" 
                     className="relative border-2 border-white -top-2 -left-2 hover:-top-1 hover:-left-1 transition-all"
                 />
             </div>
