@@ -2,7 +2,9 @@ import Link from "next/link";
 import Callout from "../components/Callout";
 import EmojiLayer from "../components/EmojiLayer";
 import GetStarted from "../components/GetStarted";
+import HackathonCTA from "../components/HackathonCTA";
 import OrganizeWithUs from "../components/OrganizeWithUs";
+import Team from "../components/Team";
 import Button from "../components/ui-patterns/Button";
 
 export default function Home() {
@@ -25,6 +27,8 @@ export default function Home() {
       </div>
       <GetStarted />
       <OrganizeWithUs />
+      <Team />
+      <HackathonCTA />
     </div>
   )
 }

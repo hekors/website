@@ -11,7 +11,7 @@ export default function GetStarted() {
     const getStartedRef = useRef(GetStartedData);
 
     return (
-        <section className="get-started-section bg-product-brown py-24 my-32">
+        <section className="get-started-section bg-product-brown py-24 my-12">
             <div className="get-started-content-wrapper wrapped-view">
                 <h3 className="get-started-title font-semibold tracking-wider text-sm uppercase text-white text-opacity-50">{"Get Started"}</h3>
                 <h1 className="get-started-headline font-product-bungee mt-4 text-4xl flex flex-col items-start justify-start w-fit h-fit">

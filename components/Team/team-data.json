@@ -1,0 +1,40 @@
+[
+    {
+        "picture": "yash-2.png",
+        "fullName": {
+            "firstName": "Yash",
+            "lastName": "Sehgal"
+        },
+        "isAvenger": true,
+        "directWebsite": {
+            "label": "website/yashsehgal",
+            "link": "https://yashsehgal.com"
+        },
+        "socialProfile": {
+            "twitterUsername": "yashsehgaldev",
+            "instagramUsername": "sehgalyash_",
+            "linkedInUsername": "sehgalyash",
+            "githubUsername": "yashsehgal"
+        },
+        "description": "Engineering & Design Lead, Community Gate Keeper"
+    },
+    {
+        "picture": "sumit.jpg",
+        "fullName": {
+            "firstName": "Sumit",
+            "lastName": "Singh"
+        },
+        "isAvenger": true,
+        "directWebsite": {
+            "label": "website/wh0sumit",
+            "link": "https://wh0sumit.vercel.app"
+        },
+        "socialProfile": {
+            "twitterUsername": "wh0sumit",
+            "instagramUsername": "wh0sumit",
+            "linkedInUsername": "wh0sumit",
+            "githubUsername": "wh0sumit"
+        },
+        "description": "building beautiful things using my brain & React, Community Smile Manager"
+    }
+]
