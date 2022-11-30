@@ -1,11 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
-type ButtonType = {
-    children?: any,
-    type?: string,
-    shade?: string,
-    isActive?: boolean
-};
+import { ButtonType } from "../../types/ui-pattern-types/button-type";
 
 export default function Button({ children, type, shade="product-orange", isActive=true }: ButtonType, props: any) {
     const [buttonType, setButtonType] = useState("product-button-secondary");

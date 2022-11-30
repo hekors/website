@@ -1,13 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import { NavbarOptionType } from "../../types/navbar-option-type";
 import Button from "../ui-patterns/Button";
 import NavbarOptionsData from './navbar-options.json';
-
-type NavbarOptionType = {
-    label?: string,
-    path?: any | string
-}
 
 export default function Navbar() {
     const navbarOptionsRef = useRef(NavbarOptionsData);

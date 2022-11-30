@@ -1,11 +1,7 @@
 import Image from 'next/image';
 import { useRef } from 'react';
+import { EmojiType } from '../../types/emoji-type';
 import EmojiLayerData from './emoji-list-data.json';
-
-type EmojiType = {
-    imageName?: any | string,
-    name?: any | string
-};
 
 export default function EmojiLayer() {
     const emojiLayerRef = useRef(EmojiLayerData);

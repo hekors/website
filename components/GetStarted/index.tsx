@@ -1,11 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import { GetStartedItemType } from '../../types/get-started-item-type';
 import GetStartedData from './get-started-data.json';
-
-type GetStartedItemType = {
-    title?: string,
-    bgColor?: string,
-    description?: any
-};
 
 export default function GetStarted() {
     const getStartedRef = useRef(GetStartedData);
