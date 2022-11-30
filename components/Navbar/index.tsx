@@ -31,7 +31,9 @@ export default function Navbar() {
                         <span className="font-product-bungee">{" avengers"}</span>
                     </span>
                 </Link>
-                <Button type="secondary">{"Attend an event"}</Button>
+                <Link href="/events">
+                    <Button type="secondary">{"Attend an event"}</Button>
+                </Link>
             </div>
         </div>
     )

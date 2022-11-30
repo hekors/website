@@ -1,8 +1,5 @@
 import Image from "next/image";
-
-type CalloutType = {
-    children?: any
-};
+import { CalloutType } from "../types/ui-pattern-types/callout-type";
 
 export default function Callout({ children }: CalloutType, props: any) {
     return (

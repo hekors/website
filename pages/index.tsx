@@ -17,7 +17,7 @@ export default function Home() {
             <span>{"Learn in public."}</span>
             <span>{"Build in public."}</span>
           </h1>
-          <Link href="" className="mt-12">
+          <Link href="https://discord.gg/DF5yRVb4vP" className="mt-12" target="_blank">
             <Button shade="product-purple-light">
               {"Join Discord"}
             </Button>

@@ -34,7 +34,7 @@ export default function Team() {
                 </h1>
 
                 <div className="team-members-list-wrapper mt-12 flex flex-row items-start justify-start gap-12">
-                    {teamMembersData?.map((teamMember: TeamMemberCardType, teamMemberIndex: number) => (
+                    {teamMembersData?.length > 0 ? teamMembersData?.map((teamMember: TeamMemberCardType, teamMemberIndex: number) => (
                         <TeamMemberCard 
                             picture={teamMember?.picture}
                             fullName={{ 
@@ -52,7 +52,7 @@ export default function Team() {
                             description={teamMember?.description}
                             key={teamMemberIndex}
                         />
-                    ))}
+                    )) : <span className="text-base text-white text-opacity-50 select-none cursor-default font-semibold">{"Team mates list loading..."}</span>}
                 </div>
             </div>
         </section>
@@ -69,6 +69,7 @@ function TeamMemberCard({
             <div className="team-member-picture-cotainer relative border-2 border-white">
                 <Image src={picture} alt="team-mate" width="280" height="370" 
                     className="relative border-2 border-white -top-2 -left-2 hover:-top-1 hover:-left-1 transition-all"
+                    priority
                 />
             </div>
             <div className="team-member-card-details-wrapper">
