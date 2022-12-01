@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../ui-patterns/Button";
 
 export default function HackathonCTA() {
@@ -23,9 +24,11 @@ export default function HackathonCTA() {
                         <span>{"Upgrade your portfolio."}</span>
                     </h1>
                     <div className="my-8" />
-                    <Button type="secondary" shade="product-purple-light">
-                        {"See upcoming Hackathons"}
-                    </Button>
+                    <Link href="/events">
+                        <Button type="secondary" shade="product-purple-light">
+                            {"See upcoming Hackathons"}
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </section>

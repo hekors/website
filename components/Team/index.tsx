@@ -10,7 +10,6 @@ export default function Team() {
 
     useEffect(() => {
         (async () => {
-            // setTeamMembersData(await getTeamData());
             await getTeamData().then(dataResponse => {
                 console.log("logging from team", dataResponse)
                 setTeamMembersData(dataResponse);
@@ -68,7 +67,7 @@ function TeamMemberCard({
         <div className="team-member-card-wrapper flex flex-col items-start justify-start gap-3 w-fit max-w-[280px]" {...props}>
             <div className="team-member-picture-cotainer relative border-2 border-white">
                 <Image src={picture} alt="team-mate" width="280" height="370" 
-                    className="relative border-2 border-white -top-2 -left-2 hover:-top-1 hover:-left-1 transition-all"
+                    className="relative border-2 border-white -top-2 -left-2 hover:-top-1 hover:-left-1 transition-all w-full h-[370px]"
                     priority
                 />
             </div>

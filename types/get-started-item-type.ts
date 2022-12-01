@@ -2,7 +2,8 @@
 type GetStartedItemType = {
     title?: string,
     bgColor?: string,
-    description?: any
+    description?: string[],
+    path?: string | any
 };
 
 export type { GetStartedItemType };

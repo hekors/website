@@ -26,7 +26,25 @@ body, html {
   @apply py-24;
 }
 
-/* for layout debugging: REMOVE BEFORE DEPLOYING TO PROD */
-/* * {
-  @apply border border-red-400;
-} */
+/* width */
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.200);
+  border-radius: 100px;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: rgb(129, 129, 129, 0.5);
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #bbbbbb80;
+}

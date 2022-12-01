@@ -15,7 +15,7 @@ export default function Events() {
                             <span>{"Events in season"}</span>
                             <span>{new Date().getFullYear() + "-" + Number(new Date().getFullYear()+1)}</span>
                         </h1>
-                        <Link href="" className="mt-12">
+                        <Link href="/events/past-events" className="mt-12">
                             <Button shade="product-teal">
                                 {"See Past Events"}
                             </Button>
