@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { TeamMemberCardType } from '../../types/team-type';
-import { getTeamData } from '../../middleware/teams-api';
+import { getTeamData } from '../../middleware';
 
 export default function Team() {
     const [teamMembersData, setTeamMembersData] = useState([]);

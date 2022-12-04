@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { getUpcomingHackathons } from "../../middleware/hackathons-api";
-import { parseDate } from "../../middleware/utils";
+import { getUpcomingHackathons } from "../../middleware";
+import { parseDate } from "../../middleware";
 import { HackathonCardType } from "../../types/hackathon-types";
 import Button from "../ui-patterns/Button";
 

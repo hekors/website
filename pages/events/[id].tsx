@@ -1,6 +1,6 @@
 import axios from "axios"
-import { getHackathon } from "../../middleware/hackathons-api";
-import { baseURL } from "../../middleware/utils"
+import { getHackathon } from "../../middleware";
+import { baseURL } from "../../middleware"
 import { HackathonCardType } from "../../types/hackathon-types";
 
 export default function EventDetailsPage() {
