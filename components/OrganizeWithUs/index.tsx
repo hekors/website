@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Callout from "../Callout";
 import Button from "../ui-patterns/Button";
 
@@ -12,7 +13,9 @@ export default function OrganizeWithUs() {
                 </h1>
                 <div className="cta-buttons-layer-wrapper mt-12 flex flex-row items-center justify-center gap-8 w-fit h-auto">
                     <Button type="primary" shade="product-red">{"Reach us out"}</Button>
-                    <Button type="secondary" shade="product-blue">{"Follow us on Twitter"}</Button>
+                    <Link href="https://twitter.com/hekorscommunity" target="_blank" rel="noreferrer">
+                        <Button type="secondary" shade="product-blue">{"Follow us on Twitter"}</Button>
+                    </Link>
                 </div>
             </div>
         </section>

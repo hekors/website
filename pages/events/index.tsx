@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import Callout from "../../components/Callout";
+import OrganizeWithUs from "../../components/OrganizeWithUs";
 import Button from "../../components/ui-patterns/Button";
 import UpcomingHackathons from "../../components/UpcomingHackathons";
+import UpcomingSessions from "../../components/UpcomingSessions";
 
 export default function Events() {
     return (
@@ -31,6 +33,8 @@ export default function Events() {
             </div>
             <div className="upcoming-hackathons-section-wrapper">
                 <UpcomingHackathons />
+                <UpcomingSessions />
+                <OrganizeWithUs />
             </div>
         </div>
     )
