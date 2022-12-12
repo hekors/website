@@ -25,7 +25,7 @@ export default function Navbar() {
                 </span>
             </div>
             <div className="flex flex-row items-center justify-end gap-8">
-                <Link href="/avengers">
+                <Link href="https://github.com/hekors/.github/blob/master/profile/avengers-at-hekors.md" target="_blank">
                     <span className="avengers-text-wrapper text-product-gradient brightness-110 hover:brightness-105">
                         <span className="font-product-manrope font-semibold">{"meet"}</span>
                         <span className="font-product-bungee">{" avengers"}</span>

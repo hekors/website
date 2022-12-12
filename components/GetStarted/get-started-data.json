@@ -3,7 +3,8 @@
         "title": "🔮 Open Source",
         "bgColor": "bg-product-red",
         "description": ["Get started by contributing to open source projects with a wide range of technology stack - Such as React"],
-        "path": "https://github.com/hekors/.github/blob/master/open-source/README.md"
+        "path": "https://github.com/hekors/.github/blob/master/open-source/README.md",
+        "hasNewTab": true
     },
     {
         "title": "🎨 Designing Sessions",
@@ -21,12 +22,14 @@
         "title": "🎉 Offline Meetups",
         "bgColor": "bg-white",
         "description": ["Join us in offline meetups where we connect in person with all the community members. Checkout for upcoming offline meetups."],
-        "path": "/offline-meetups"
+        "path": "https://lu.ma/community/com-JOfvbmBawEqrJuk/calendar",
+        "hasNewTab": true
     },
     {
         "title": "📷 Community Gallery",
         "bgColor": "bg-product-pink",
         "description": ["A small and fun gallery of our online/offline meetups, team outings, events and hackathons we've been to."],
-        "path": "/community-gallery"
+        "path": "https://drive.google.com/drive/folders/1gR_6eD7SiPNjSc79Aykg0m8gnKcsP0rp?usp=share_link",
+        "hasNewTab": true
     }
 ]

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FooterOptionType, SocialLinkType } from "../../types/footer-option-type";
 import Button from "../ui-patterns/Button";
-import { communityLinks, socialLinks } from './footer-data';
+import { communityLinks, directLinks, socialLinks } from './footer-data';
 
 export default function Footer() {
     return (
@@ -29,7 +29,7 @@ export default function Footer() {
                     </div>
                     <div className="footer-links-sections-wrapper">
                         <div className="flex flex-row items-start justify-end gap-12">
-                        <div className="footer-links__community-links-wrapper">
+                            <div className="footer-links__community-links-wrapper">
                                 <h2 className="leading-snug font-product-bungee text-lg text-product-red">{"Community"}</h2>
                                 <ul className="footer-options-list flex flex-col items-start justify-start gap-1 mt-3">
                                     {communityLinks?.map((footerOption: FooterOptionType, footerOptionIndex: number) => (
@@ -38,6 +38,19 @@ export default function Footer() {
                                                     <span className="list-item-title-wrapper">{footerOption?.title}</span></Link>}
                                             {footerOption?.path && <Link href={footerOption?.path}>
                                                 <span className="list-item-wrapper">{footerOption?.title}</span></Link>}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="footer-links__direct-links-wrapper">
+                                <h2 className="leading-snug font-product-bungee text-lg text-product-red">{"Direct Links"}</h2>
+                                <ul className="footer-options-list flex flex-col items-start justify-start gap-1 mt-3">
+                                    {directLinks?.map((footerOption: FooterOptionType, footerOptionIndex: number) => (
+                                        <li className="footer-option-list-item list-none text-sm text-black text-opacity-60 hover:text-opacity-80" key={footerOptionIndex}>
+                                            {footerOption?.link && <Link href={footerOption?.link} target="_blank">
+                                                <span className="list-item-title-wrapper">{footerOption?.title}</span></Link>}
+                                            {footerOption?.path && <Link href={footerOption?.path}>
+                                                <span className="list-item-title-wrapper">{footerOption?.title}</span></Link>}
                                         </li>
                                     ))}
                                 </ul>

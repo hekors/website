@@ -5,15 +5,16 @@ const communityLinks: FooterOptionType[] = [
     { title: "Contact Us", link: "https://github.com/hekors" },
     { title: "Organize with HEKORS", link: "https://github.com/hekors/.github" },
     { title: "Community Guidelines", link: "https://github.com/hekors/.github/blob/master/CODE_OF_CONDUCT.md" },
-    { title: "Join Team", link: "https://github.com/hekors/.github/tree/master/profile" }
+    { title: "Join Team", link: "https://github.com/hekors/.github/tree/master/profile" },
+    { title: "Community Gallery", link: "https://drive.google.com/drive/folders/1gR_6eD7SiPNjSc79Aykg0m8gnKcsP0rp?usp=share_link" },
 ];
 
 const directLinks: FooterOptionType[] = [
     { title: "Hackathons", path: "" },
-    { title: "Open Source", path: "https://github.com/hekors/.github/blob/master/open-source/README.md" },
+    { title: "Open Source", link: "https://github.com/hekors/.github/blob/master/open-source/README.md" },
     { title: "MLH.io", link: "https://mlh.io" },
     { title: "Offline Meetups", path: "" },
-    { title: "Avengers at HEKORS", path: "/avengers" }
+    { title: "Avengers at HEKORS", link: "https://github.com/hekors/.github/blob/master/profile/avengers-at-hekors.md" }
 ];
 
 const socialLinks: SocialLinkType[] = [

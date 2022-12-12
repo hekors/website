@@ -22,6 +22,7 @@ export default function GetStarted() {
                             title={getStartedItem?.title}
                             bgColor={getStartedItem?.bgColor}
                             description={getStartedItem?.description}
+                            hasNewTab={getStartedItem?.hasNewTab}
                             path={getStartedItem?.path}
                         />
                     ))}
@@ -31,29 +32,34 @@ export default function GetStarted() {
     )
 }
 
-function GetStartedItem({ title, bgColor="bg-white", description, path }: GetStartedItemType, props: any) {
+function GetStartedItem({ title, bgColor="bg-white", description, path, hasNewTab }: GetStartedItemType, props: any) {
     const [backgroundColor, setBackgroundColor] = useState(bgColor);
-    const [cardTextColor, setCardTextColor] = useState("text-[#181818]");
+    const [cardTextColor, setCardTextColor] = useState("text-black");
 
     useEffect(() => {
         switch (bgColor) {
             case "bg-product-red": setBackgroundColor("bg-product-red"); break;
             case "bg-product-purple-light": setBackgroundColor("bg-product-purple-light"); break;
+            case "bg-product-purple-dark": setBackgroundColor("bg-product-purple-dark"); break;
             case "bg-product-yellow": setBackgroundColor("bg-product-yellow"); break;
             case "bg-product-pink": setBackgroundColor("bg-product-pink"); break;
             case "bg-white": setBackgroundColor("bg-white"); break;
+            case "bg-product-blue": setBackgroundColor("bg-product-blue"); break;
+            case "bg-product-brown": setBackgroundColor("bg-product-brown"); break;
         }
     }, [bgColor]);
 
     useEffect(() => {
-        if (["bg-product-red", "bg-product-purple-light", "bg-product-pink"].includes(backgroundColor)) {
+        if (["bg-product-red", "bg-product-purple-light", 
+            "bg-product-purple-dark", "bg-product-brown", 
+            "bg-product-pink"].includes(backgroundColor)) {
             setCardTextColor("text-white");
         }
     }, [backgroundColor]);
     
     return (
         <div className="get-started-item" {...props}>
-            <Link href={path}>
+            <Link href={path} target={hasNewTab ? "_blank" : "_self"}>
                 <div className={`get-started-item__card-wrapper rounded-md flex flex-col 
                     items-start justify-end px-4 pb-6 w-[240px] h-[160px] shadow
                     hover:scale-105 transition-all cursor-pointer select-none ${backgroundColor} ${cardTextColor}`}
