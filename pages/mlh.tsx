@@ -1,4 +1,4 @@
-import Callout from "../components/Callout";
+import Callout from "@/common/components/Callout";
 
 export default function MLH() {
     return (

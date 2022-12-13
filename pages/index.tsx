@@ -1,12 +1,15 @@
+// Basic Imports
 import Link from "next/link";
-import Callout from "../components/Callout";
-import CommunityNarratives from "../components/CommunityNarratives";
-import EmojiLayer from "../components/EmojiLayer";
-import GetStarted from "../components/GetStarted";
-import HackathonCTA from "../components/HackathonCTA";
-import OrganizeWithUs from "../components/OrganizeWithUs";
-import Team from "../components/Team";
-import Button from "../components/ui-patterns/Button";
+
+// Components Imports
+import Callout from "@/common/components/Callout";
+import CommunityNarratives from "@/common/components/CommunityNarratives";
+import EmojiLayer from "@/common/components/EmojiLayer";
+import GetStarted from "@/common/components/GetStarted";
+import HackathonCTA from "@/common/components/HackathonCTA";
+import OrganizeWithUs from "@/common/components/OrganizeWithUs";
+import Team from "@/common/components/Team";
+import Button from "@/common/components/ui-patterns/Button";
 
 export default function Home() {
   return (
@@ -18,10 +21,12 @@ export default function Home() {
             <span>{"Learn in public."}</span>
             <span>{"Build in public."}</span>
           </h1>
-          <Link href="https://discord.gg/DF5yRVb4vP" className="mt-12" target="_blank">
-            <Button shade="product-purple-light">
-              {"Join Discord"}
-            </Button>
+          <Link
+            href="https://discord.gg/DF5yRVb4vP"
+            className="mt-12"
+            target="_blank"
+          >
+            <Button shade="product-purple-light">{"Join Discord"}</Button>
           </Link>
         </div>
         <EmojiLayer />
@@ -32,5 +37,5 @@ export default function Home() {
       <HackathonCTA />
       <CommunityNarratives />
     </div>
-  )
+  );
 }

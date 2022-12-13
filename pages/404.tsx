@@ -1,7 +1,10 @@
+// Basic Imports
 import Image from "next/image";
 import Link from "next/link";
-import Callout from "../components/Callout";
-import Button from "../components/ui-patterns/Button";
+
+// Components Imports
+import Callout from "@/common/components/Callout";
+import Button from "@/common/components/ui-patterns/Button";
 
 export default function InvalidPage() {
     return (

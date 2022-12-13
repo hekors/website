@@ -1,10 +1,15 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+// Basic Imports
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import AnnouncementBar from '../components/AnnouncementBar'
 import Link from 'next/link'
+import type { AppProps } from 'next/app'
+
+// Components Imports
+import Navbar from '@/common/components/Navbar'
+import Footer from '@/common/components/Footer'
+import AnnouncementBar from '@/common/components/AnnouncementBar'
+
+// Styles Imports
+import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
