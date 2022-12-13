@@ -2,8 +2,8 @@
 import Link from "next/link";
 
 // Components Imports
-import Callout from "@/components/Callout";
-import Button from "@/components/ui-patterns/Button";
+import Callout from "@/common/components/Callout";
+import Button from "@/common/components/ui-patterns/Button";
 
 export default function OrganizeWithUs() {
     return (
