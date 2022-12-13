@@ -1,34 +1,34 @@
 [
-    {
-        "name": "confetti",
-        "imageName": "confetti-emoji.svg"
-    },
-    {
-        "name": "school-bag",
-        "imageName": "school-bag-emoji.svg"
-    },
-    {
-        "name": "color-palette",
-        "imageName": "color-palette-emoji.svg"
-    },
-    {
-        "name": "rocket",
-        "imageName": "rocket-emoji.svg"
-    },
-    {
-        "name": "books",
-        "imageName": "books-emoji.svg"
-    },
-    {
-        "name": "open-eyes",
-        "imageName": "open-eyes-emoji.svg"
-    },
-    {
-        "name": "heart-eyes",
-        "imageName": "heart-eyes-emoji.svg"
-    },
-    {
-        "name": "magic-ball",
-        "imageName": "magic-ball-emoji.svg"
-    }
+  {
+    "name": "confetti",
+    "imageName": "confetti-emoji.svg"
+  },
+  {
+    "name": "school-bag",
+    "imageName": "school-bag-emoji.svg"
+  },
+  {
+    "name": "color-palette",
+    "imageName": "color-palette-emoji.svg"
+  },
+  {
+    "name": "rocket",
+    "imageName": "rocket-emoji.svg"
+  },
+  {
+    "name": "books",
+    "imageName": "books-emoji.svg"
+  },
+  {
+    "name": "open-eyes",
+    "imageName": "open-eyes-emoji.svg"
+  },
+  {
+    "name": "heart-eyes",
+    "imageName": "heart-eyes-emoji.svg"
+  },
+  {
+    "name": "magic-ball",
+    "imageName": "magic-ball-emoji.svg"
+  }
 ]

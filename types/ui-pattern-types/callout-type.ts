@@ -1,6 +1,5 @@
-
 type CalloutType = {
-    children?: any
+  children?: any;
 };
 
 export type { CalloutType };

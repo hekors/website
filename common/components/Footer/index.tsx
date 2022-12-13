@@ -1,11 +1,16 @@
+// Basic Imports
 import Image from "next/image";
 import Link from "next/link";
+
+// Components Imports
+import Button from "../ui-patterns/Button";
+import { communityLinks, directLinks, socialLinks } from "./footer-data";
+
+// Types Imports
 import {
   FooterOptionType,
   SocialLinkType,
-} from "../../../types/footer-option-type";
-import Button from "../ui-patterns/Button";
-import { communityLinks, directLinks, socialLinks } from "./footer-data";
+} from "@/types/footer-option-type";
 
 export default function Footer() {
   return (
