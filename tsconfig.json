@@ -18,7 +18,7 @@
     "paths": {
       "@/public/*": ["public/*"],
       "@/pages/*": ["pages/*"],
-      "@/components/*": ["components/*"],
+      "@/common/*": ["common/*"],
       "@/types/*": ["types/*"],
       "@/styles/*": ["styles/*"],
       "@/middlewares/*": ["middlewares/*"],
