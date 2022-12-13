@@ -1,7 +1,12 @@
+// Basic Imports
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-import { GetStartedItemType } from '../../types/get-started-item-type';
+
+// Component Imports
 import GetStartedData from './get-started-data.json';
+
+// Types Imports
+import { GetStartedItemType } from '@/types/get-started-item-type';
 
 export default function GetStarted() {
     const getStartedRef = useRef(GetStartedData);

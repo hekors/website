@@ -1,5 +1,8 @@
+// Basic Imports
 import Image from "next/image";
-import { CalloutType } from "../types/ui-pattern-types/callout-type";
+
+// Types Imports
+import { CalloutType } from "@/types/ui-pattern-types/callout-type";
 
 export default function Callout({ children }: CalloutType, props: any) {
     return (

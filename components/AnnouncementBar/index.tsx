@@ -1,5 +1,10 @@
+// Basic Imports
 import React, { useEffect, useState } from "react";
-import { AnnouncementBarType } from "../../types/announcement-bar-type";
+
+// Types Comports
+import { AnnouncementBarType } from "@/types/announcement-bar-type";
+
+// Icon Imports
 import { FaTimes } from 'react-icons/fa';
 
 export default function AnnouncementBar({ children, color="bg-product-red", isClosable=true }: AnnouncementBarType) {

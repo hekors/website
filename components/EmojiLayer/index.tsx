@@ -1,7 +1,12 @@
-import Image from 'next/image';
+// Basic Imports
 import { useRef } from 'react';
-import { EmojiType } from '../../types/emoji-type';
+import Image from 'next/image';
+
+// Components Imports
 import EmojiLayerData from './emoji-list-data.json';
+
+// Types Imports
+import { EmojiType } from '@/types/emoji-type';
 
 export default function EmojiLayer() {
     const emojiLayerRef = useRef(EmojiLayerData);

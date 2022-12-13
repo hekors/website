@@ -1,9 +1,16 @@
+// Basic Imports
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import { TeamMemberCardType } from '../../types/team-type';
+
+// Components Imports
 import { getTeamData } from '../../middleware';
+
+// Types Imports
+import { TeamMemberCardType } from '@/types/team-type';
+
+// Icon Imports
+import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 export default function Team() {
     const [teamMembersData, setTeamMembersData] = useState([]);

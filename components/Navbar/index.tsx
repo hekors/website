@@ -1,9 +1,14 @@
+// Basic Imports
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import { NavbarOptionType } from "../../types/navbar-option-type";
-import Button from "../ui-patterns/Button";
+
+// Components Imports
+import Button from "@/components/ui-patterns/Button";
 import NavbarOptionsData from './navbar-options.json';
+
+// Types Imports
+import { NavbarOptionType } from "@/types/navbar-option-type";
 
 export default function Navbar() {
     const navbarOptionsRef = useRef(NavbarOptionsData);

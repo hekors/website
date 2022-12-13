@@ -1,10 +1,14 @@
-import Image from "next/image";
+// Basic Imports
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+// Components Imports
 import { getUpcomingHackathons } from "../../middleware";
 import { parseDate } from "../../middleware";
-import { HackathonCardType } from "../../types/hackathon-types";
-import Button from "../ui-patterns/Button";
+import Button from "@/components/ui-patterns/Button";
+
+// Types Imports
+import { HackathonCardType } from "@/types/hackathon-types";
 
 export default function UpcomingHackathons() {
     const [upcomingHackathonsData, setUpcomingHackathonsData] = useState([]);

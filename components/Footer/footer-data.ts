@@ -1,4 +1,7 @@
-import { FooterOptionType, SocialLinkType } from "../../types/footer-option-type";
+// Types Imports
+import { FooterOptionType, SocialLinkType } from "@/types/footer-option-type";
+
+// Icon Imports
 import { AiOutlineTwitter } from 'react-icons/ai';
 
 const communityLinks: FooterOptionType[] = [

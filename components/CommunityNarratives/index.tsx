@@ -1,3 +1,4 @@
+// Basic Imports
 import { useState } from "react"
 
 export default function CommunityNarratives() {
