@@ -5,6 +5,7 @@ import { getUpcomingHackathons } from "../../middleware";
 import { parseDate } from "../../middleware";
 import { HackathonCardType } from "../../types/hackathon-types";
 import Button from "../ui-patterns/Button";
+import { CardSkeleton } from "../ui-patterns/Skeleton";
 
 export default function UpcomingHackathons() {
     const [upcomingHackathonsData, setUpcomingHackathonsData] = useState([]);
@@ -31,7 +32,7 @@ export default function UpcomingHackathons() {
                 </div>
                 <Button type="secondary" shade="product-orange">{"See past hackathons"}</Button>
             </div>
-            <div className="upcoming-hackathons-list-wrapper wrapped-view mt-20">
+            <div className="upcoming-hackathons-list-wrapper wrapped-view mt-20 flex flex-row items-start justify-start gap-3">
                 {upcomingHackathonsData?.length > 0 ? upcomingHackathonsData?.map((upcomingHackathon: HackathonCardType, upcomingHackathonIndex: number) => (
                     <HackathonCard 
                         hackathonTitle={upcomingHackathon?.hackathonTitle}
@@ -44,7 +45,12 @@ export default function UpcomingHackathons() {
                         hackathonSlugID={upcomingHackathon?.hackathonSlugID}
                         key={upcomingHackathonIndex}
                     />
-                )): <span className="text-base text-white text-opacity-50 select-none cursor-default font-semibold">{"Upcoming Hackathons list loading..."}</span>}
+                )): <div className="flex flex-row items-start justify-start gap-3 w-fit h-auto">
+                        <CardSkeleton visibility="10%" />
+                        <CardSkeleton visibility="10%" />
+                        <CardSkeleton visibility="10%" />
+                        <CardSkeleton visibility="10%" />
+                    </div>}
             </div>
         </section>
     )

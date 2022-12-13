@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { TeamMemberCardType } from '../../types/team-type';
 import { getTeamData } from '../../middleware';
+import { CardSkeleton } from '../ui-patterns/Skeleton';
 
 export default function Team() {
     const [teamMembersData, setTeamMembersData] = useState([]);
@@ -51,7 +52,12 @@ export default function Team() {
                             description={teamMember?.description}
                             key={teamMemberIndex}
                         />
-                    )) : <span className="text-base text-white text-opacity-50 select-none cursor-default font-semibold">{"Team mates list loading..."}</span>}
+                    )) : <div className="flex flex-row items-start justify-start gap-3 w-fit h-auto">
+                        <CardSkeleton visibility="20%" />
+                        <CardSkeleton visibility="20%" />
+                        <CardSkeleton visibility="20%" />
+                        <CardSkeleton visibility="20%" />
+                    </div>}
                 </div>
             </div>
         </section>

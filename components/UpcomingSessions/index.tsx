@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CardSkeleton } from "../ui-patterns/Skeleton";
 
 export default function UpcomingSessions() {
     const [upcomingSessionsData, setUpcomingSessionsData] = useState([]);
@@ -13,10 +14,15 @@ export default function UpcomingSessions() {
                     <h1 className="upcoming-sessions-headline font-product-bungee mt-4 text-4xl flex flex-col text-product-brown items-start justify-start w-fit h-fit">
                         {"Upcoming Sessions"}
                     </h1>
-                    <div className="upcoming-sessions-list-wrapper wrapped-view mt-20">
+                    <div className="upcoming-sessions-list-wrapper wrapped-view mt-20 flex flex-row items-start justify-start gap-3">
                         {upcomingSessionsData?.length > 0 ? upcomingSessionsData?.map((upcomingSession, upcomingSessionIndex: number) => (
                             <SessionCard key={upcomingSessionIndex} />
-                        )) : <span className="text-base text-black text-opacity-50 select-none cursor-default font-semibold">{"Upcoming Sessions list loading..."}</span>}
+                        )) : <div className="flex flex-row items-start justify-start gap-3 w-fit h-auto">
+                            <CardSkeleton />
+                            <CardSkeleton />
+                            <CardSkeleton />
+                            <CardSkeleton />
+                        </div>}
                     </div>
                 </div>
             </div>
