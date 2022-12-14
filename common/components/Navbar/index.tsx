@@ -12,7 +12,7 @@ import NavbarOptionsData from "./navbar-options.json";
 import { NavbarOptionType } from "@/types/navbar-option-type";
 
 const Navbar: React.FunctionComponent<NavbarOptionType> = () => {
-  const navbarOptionsRef = useRef(NavbarOptionsData);
+  const navbarOptionsRef = useRef<Array<NavbarOptionType>>(NavbarOptionsData);
 
   return (
     <div className="navbar wrapped-view py-8 flex flex-row items-center justify-between">

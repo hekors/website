@@ -13,7 +13,7 @@ import { TeamMemberCardType } from "@/types/team-type";
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Team: React.FunctionComponent<TeamMemberCardType> = () => {
-  const [teamMembersData, setTeamMembersData] = useState([]);
+  const [teamMembersData, setTeamMembersData] = useState<any>([]);
 
   useEffect(() => {
     (async () => {

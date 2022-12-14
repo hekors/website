@@ -13,10 +13,11 @@ const AnnouncementBar: React.FunctionComponent<AnnouncementBarType> = ({
   isClosable = true,
 }) => {
   const [announcementBarVisibility, setAnnouncementBarVisibility] =
-    useState(isClosable);
-  const [announcementBarColor, setAnnouncementBarColor] = useState(color);
+    useState<boolean>(isClosable);
+  const [announcementBarColor, setAnnouncementBarColor] =
+    useState<string>(color);
   const [announcementBarTextColor, setAnnouncementBarTextColor] =
-    useState("text-black");
+    useState<string>("text-black");
 
   useEffect(() => {
     switch (color) {

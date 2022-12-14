@@ -8,10 +8,10 @@ const Button: React.FunctionComponent<ButtonType> = (
   { children, type, shade = "product-orange", isActive = true },
   props: any
 ) => {
-  const [buttonType, setButtonType] = useState("product-button-secondary");
-  const [buttonShade, setButtonShade] = useState("product-orange");
-  const [buttonShadowSize, setButtonShadowSize] = useState("5px 5px");
-  const isButtonActive = useRef(isActive ? true : false);
+  const [buttonType, setButtonType] = useState<string>("product-button-secondary");
+  const [buttonShade, setButtonShade] = useState<string>("product-orange");
+  const [buttonShadowSize, setButtonShadowSize] = useState<string>("5px 5px");
+  const isButtonActive = useRef<boolean>(isActive ? true : false);
 
   useEffect(() => {
     switch (type) {
@@ -62,9 +62,8 @@ const Button: React.FunctionComponent<ButtonType> = (
   return (
     <React.Fragment>
       <button
-        className={`product-button ${
-          isButtonActive ? `${buttonType}` : "button-deactivated"
-        }`}
+        className={`product-button ${isButtonActive ? `${buttonType}` : "button-deactivated"
+          }`}
         {...props}
         onMouseEnter={() => setButtonShadowSize("3px 3px")}
         onMouseLeave={() => setButtonShadowSize("5px 5px")}

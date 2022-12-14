@@ -10,7 +10,7 @@ import GetStartedData from "./get-started-data.json";
 import { GetStartedItemType } from "@/types/get-started-item-type";
 
 const GetStarted: React.FunctionComponent<GetStartedItemType> = () => {
-  const getStartedRef = useRef(GetStartedData);
+  const getStartedRef = useRef<Array<GetStartedItemType>>(GetStartedData);
 
   return (
     <React.Fragment>
@@ -56,8 +56,8 @@ function GetStartedItem(
   }: GetStartedItemType,
   props: any
 ) {
-  const [backgroundColor, setBackgroundColor] = useState(bgColor);
-  const [cardTextColor, setCardTextColor] = useState("text-black");
+  const [backgroundColor, setBackgroundColor] = useState<string>(bgColor);
+  const [cardTextColor, setCardTextColor] = useState<string>("text-black");
 
   useEffect(() => {
     switch (bgColor) {

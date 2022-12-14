@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 const UpcomingSessions: React.FunctionComponent = () => {
-  const [upcomingSessionsData, setUpcomingSessionsData] = useState([]);
+  const [upcomingSessionsData, setUpcomingSessionsData] = useState<any>([]);
 
   return (
     <React.Fragment>
@@ -18,7 +18,7 @@ const UpcomingSessions: React.FunctionComponent = () => {
             <div className="upcoming-sessions-list-wrapper wrapped-view mt-20">
               {upcomingSessionsData?.length > 0 ? (
                 upcomingSessionsData?.map(
-                  (upcomingSession, upcomingSessionIndex: number) => (
+                  (upcomingSession: any, upcomingSessionIndex: number) => (
                     <SessionCard key={upcomingSessionIndex} />
                   )
                 )

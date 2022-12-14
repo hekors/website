@@ -10,7 +10,7 @@ import EmojiLayerData from "./emoji-list-data.json";
 import { EmojiType } from "@/types/emoji-type";
 
 const EmojiLayer: React.FunctionComponent<EmojiType> = () => {
-  const emojiLayerRef = useRef(EmojiLayerData);
+  const emojiLayerRef = useRef<Array<EmojiType>>(EmojiLayerData);
 
   return (
     <React.Fragment>

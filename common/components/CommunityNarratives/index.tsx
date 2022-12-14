@@ -2,7 +2,11 @@
 import React, { useState } from "react";
 
 const CommunityNarratives: React.FunctionComponent = () => {
-  const [communityNarrativesData, setCommunityNarrativesData] = useState([]);
+  // TODO
+  // change the usetstate type after we are sure about data types
+  const [communityNarrativesData, setCommunityNarrativesData] = useState<any>(
+    []
+  );
 
   return (
     <React.Fragment>
@@ -17,7 +21,7 @@ const CommunityNarratives: React.FunctionComponent = () => {
           <div className="community-narratives-list-wrapper mt-12">
             {communityNarrativesData?.length > 0 ? (
               communityNarrativesData?.map(
-                (communityNarrative, communityNarrativeIndex: number) => (
+                (communityNarrative: any, communityNarrativeIndex: number) => (
                   <div key={communityNarrativeIndex} />
                 )
               )

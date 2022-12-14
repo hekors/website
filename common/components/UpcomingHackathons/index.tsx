@@ -11,7 +11,7 @@ import Button from "@/common/components/ui-patterns/Button";
 import { HackathonCardType } from "@/types/hackathon-types";
 
 const UpcomingHackathons: React.FunctionComponent<HackathonCardType> = () => {
-  const [upcomingHackathonsData, setUpcomingHackathonsData] = useState([]);
+  const [upcomingHackathonsData, setUpcomingHackathonsData] = useState<any>([]);
 
   useEffect(() => {
     (async () => {
