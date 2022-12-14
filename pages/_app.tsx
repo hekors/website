@@ -11,7 +11,10 @@ import AnnouncementBar from "@/common/components/AnnouncementBar";
 // Styles Imports
 import "@/styles/globals.css";
 
-export default function App({ Component, pageProps }: AppProps) {
+const App: React.FunctionComponent<AppProps> = ({
+  Component,
+  pageProps,
+}: AppProps) => {
   return (
     <React.Fragment>
       <AnnouncementBar>
@@ -36,4 +39,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Footer />
     </React.Fragment>
   );
-}
+};
+
+export default App;
