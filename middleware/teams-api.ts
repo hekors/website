@@ -1,6 +1,9 @@
+// Library Imports
 import axios from "axios";
-import { TeamMemberCardType } from "../types/team-type";
-import { baseURL, mediaURL } from "./utils";
+
+// Components Imports
+import { TeamMemberCardType } from "@/types/team-type";
+import { baseURL, mediaURL } from "@/common/utils";
 
 async function getTeamData() {
   let teamDataResponse: any = [];

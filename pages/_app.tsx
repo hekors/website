@@ -4,9 +4,9 @@ import Link from "next/link";
 import type { AppProps } from "next/app";
 
 // Components Imports
-import Navbar from "@/common/components/Navbar";
-import Footer from "@/common/components/Footer";
-import AnnouncementBar from "@/common/components/AnnouncementBar";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import AnnouncementBar from "@/components/AnnouncementBar";
 
 // Styles Imports
 import "@/styles/globals.css";

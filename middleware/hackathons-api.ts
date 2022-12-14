@@ -1,6 +1,9 @@
+// Library Imports
 import axios from "axios";
-import { HackathonCardType } from "../types/hackathon-types";
-import { baseURL, mediaURL } from "./utils";
+
+// Components Imports
+import { HackathonCardType } from "@/types/hackathon-types";
+import { baseURL, mediaURL } from "@/common/utils";
 
 async function getAllHackathons() {
   let allHackathonsResponse: any = [];

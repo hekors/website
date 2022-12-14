@@ -4,14 +4,14 @@ import Link from "next/link";
 import { NextPage } from "next";
 
 // Components Imports
-import Callout from "@/common/components/Callout";
-import CommunityNarratives from "@/common/components/CommunityNarratives";
-import EmojiLayer from "@/common/components/EmojiLayer";
-import GetStarted from "@/common/components/GetStarted";
-import HackathonCTA from "@/common/components/HackathonCTA";
-import OrganizeWithUs from "@/common/components/OrganizeWithUs";
-import Team from "@/common/components/Team";
-import Button from "@/common/components/ui-patterns/Button";
+import Callout from "@/components/Callout";
+import CommunityNarratives from "@/components/CommunityNarratives";
+import EmojiLayer from "@/components/EmojiLayer";
+import GetStarted from "@/components/GetStarted";
+import HackathonCTA from "@/components/HackathonCTA";
+import OrganizeWithUs from "@/components/OrganizeWithUs";
+import Team from "@/components/Team";
+import Button from "@/components/ui-patterns/Button";
 
 const Home: NextPage = () => {
   return (

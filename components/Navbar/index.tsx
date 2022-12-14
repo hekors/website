@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRef } from "react";
 
 // Components Imports
-import Button from "@/common/components/ui-patterns/Button";
+import Button from "@/components/ui-patterns/Button";
 import NavbarOptionsData from "./navbar-options.json";
 
 // Types Imports

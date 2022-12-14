@@ -5,8 +5,8 @@ import Link from "next/link";
 import { NextPage } from "next";
 
 // Components Imports
-import Callout from "@/common/components/Callout";
-import Button from "@/common/components/ui-patterns/Button";
+import Callout from "@/components/Callout";
+import Button from "@/components/ui-patterns/Button";
 
 const NotFound: NextPage = () => {
   return (

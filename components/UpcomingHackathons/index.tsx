@@ -3,9 +3,9 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 // Components Imports
-import { getUpcomingHackathons } from "../../../middleware";
-import { parseDate } from "../../../middleware";
-import Button from "@/common/components/ui-patterns/Button";
+import { getUpcomingHackathons } from "@/middleware/hackathons-api";
+import { parseDate } from "@/common/utils";
+import Button from "@/components/ui-patterns/Button";
 
 // Types Imports
 import { HackathonCardType } from "@/types/hackathon-types";

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Components Imports
-import Button from "../ui-patterns/Button";
+import Button from "@/components/ui-patterns/Button";
 import { communityLinks, directLinks, socialLinks } from "./footer-data";
 
 // Types Imports

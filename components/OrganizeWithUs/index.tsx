@@ -3,8 +3,8 @@ import React from "react";
 import Link from "next/link";
 
 // Components Imports
-import Callout from "@/common/components/Callout";
-import Button from "@/common/components/ui-patterns/Button";
+import Callout from "@/components/Callout";
+import Button from "@/components/ui-patterns/Button";
 
 const OrganizeWithUs: React.FunctionComponent = () => {
   return (

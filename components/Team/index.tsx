@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 // Components Imports
-import { getTeamData } from "../../../middleware";
+import { getTeamData } from "@/middleware/teams-api";
 
 // Types Imports
 import { TeamMemberCardType } from "@/types/team-type";
