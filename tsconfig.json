@@ -18,10 +18,11 @@
     "paths": {
       "@/public/*": ["public/*"],
       "@/pages/*": ["pages/*"],
+      "@/components/*": ["components/*"],
       "@/common/*": ["common/*"],
       "@/types/*": ["types/*"],
       "@/styles/*": ["styles/*"],
-      "@/middlewares/*": ["middlewares/*"],
+      "@/middleware/*": ["middleware/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
