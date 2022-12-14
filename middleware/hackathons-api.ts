@@ -11,27 +11,34 @@ async function getAllHackathons() {
   await axios
     .get(baseURL + "/api/hackathons")
     .then((hackathonResponse: any) => {
-      hackathonResponse?.data?.data?.map(async (response: any) => {
-        const responseAttribute: any = response?.attributes;
-        const _hackathonData: HackathonCardType = {
-          hackathonTitle: responseAttribute?.hackathonTitle,
-          hackathonOrganizer: responseAttribute?.hackathonOrganizer,
-          isHackathonOffline: responseAttribute?.isHackathonOffline,
-          isHackathonCompleted: responseAttribute?.isHackathonCompleted,
-          hackathonLogo: {
-            file: responseAttribute?.hackathonLogo,
-            logoID: mediaURL(responseAttribute?.hackathonLogoID),
-          },
-          hackathonBG: {
-            file: responseAttribute?.hackathonBG,
-            logoID: mediaURL(responseAttribute?.hackathonBGID),
-          },
-          hackathonStartDate: responseAttribute?.hackathonStartDate,
-          hackathonEndDate: responseAttribute?.hackathonEndDate,
-          hackathonSlugID: responseAttribute?.hackathonSlugID,
-        };
-        hackathonResponse = [await _hackathonData, ...hackathonResponse];
-      });
+      hackathonResponse?.data?.data
+        ?.map(async (response: any) => {
+          const responseAttribute: any = response?.attributes;
+          const _hackathonData: HackathonCardType = {
+            hackathonTitle: responseAttribute?.hackathonTitle,
+            hackathonOrganizer: responseAttribute?.hackathonOrganizer,
+            isHackathonOffline: responseAttribute?.isHackathonOffline,
+            isHackathonCompleted: responseAttribute?.isHackathonCompleted,
+            hackathonLogo: {
+              file: responseAttribute?.hackathonLogo,
+              logoID: mediaURL(responseAttribute?.hackathonLogoID),
+            },
+            hackathonBG: {
+              file: responseAttribute?.hackathonBG,
+              logoID: mediaURL(responseAttribute?.hackathonBGID),
+            },
+            hackathonStartDate: responseAttribute?.hackathonStartDate,
+            hackathonEndDate: responseAttribute?.hackathonEndDate,
+            hackathonSlugID: responseAttribute?.hackathonSlugID,
+          };
+          hackathonResponse = [await _hackathonData, ...hackathonResponse];
+        })
+        .catch((err: any) => {
+          throw new Error(err);
+        })
+        .finally(() => {
+          // do something
+        });
     });
 
   return allHackathonsResponse;
