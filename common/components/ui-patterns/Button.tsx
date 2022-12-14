@@ -1,13 +1,13 @@
 // Basic Imports
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // Types Imports
 import { ButtonType } from "@/types/ui-pattern-types/button-type";
 
-export default function Button(
-  { children, type, shade = "product-orange", isActive = true }: ButtonType,
+const Button: React.FunctionComponent<ButtonType> = (
+  { children, type, shade = "product-orange", isActive = true },
   props: any
-) {
+) => {
   const [buttonType, setButtonType] = useState("product-button-secondary");
   const [buttonShade, setButtonShade] = useState("product-orange");
   const [buttonShadowSize, setButtonShadowSize] = useState("5px 5px");
@@ -60,18 +60,22 @@ export default function Button(
   }, [shade]);
 
   return (
-    <button
-      className={`product-button ${
-        isButtonActive ? `${buttonType}` : "button-deactivated"
-      }`}
-      {...props}
-      onMouseEnter={() => setButtonShadowSize("3px 3px")}
-      onMouseLeave={() => setButtonShadowSize("5px 5px")}
-      style={{
-        boxShadow: buttonShadowSize + buttonShade,
-      }}
-    >
-      {children || "DemoButton"}
-    </button>
+    <React.Fragment>
+      <button
+        className={`product-button ${
+          isButtonActive ? `${buttonType}` : "button-deactivated"
+        }`}
+        {...props}
+        onMouseEnter={() => setButtonShadowSize("3px 3px")}
+        onMouseLeave={() => setButtonShadowSize("5px 5px")}
+        style={{
+          boxShadow: buttonShadowSize + buttonShade,
+        }}
+      >
+        {children || "DemoButton"}
+      </button>
+    </React.Fragment>
   );
-}
+};
+
+export default Button;

@@ -1,4 +1,5 @@
 // Basic Imports
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
@@ -10,7 +11,7 @@ import NavbarOptionsData from "./navbar-options.json";
 // Types Imports
 import { NavbarOptionType } from "@/types/navbar-option-type";
 
-export default function Navbar() {
+const Navbar: React.FunctionComponent<NavbarOptionType> = () => {
   const navbarOptionsRef = useRef(NavbarOptionsData);
 
   return (
@@ -55,4 +56,6 @@ export default function Navbar() {
       </div>
     </div>
   );
-}
+};
+
+export default Navbar;

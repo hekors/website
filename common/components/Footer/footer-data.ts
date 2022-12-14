@@ -4,7 +4,7 @@ import { FooterOptionType, SocialLinkType } from "@/types/footer-option-type";
 // Icon Imports
 import { AiOutlineTwitter } from "react-icons/ai";
 
-const communityLinks: FooterOptionType[] = [
+const communityLinks: Array<FooterOptionType> = [
   { title: "Contact Us", link: "https://github.com/hekors" },
   { title: "Organize with HEKORS", link: "https://github.com/hekors/.github" },
   {
@@ -21,7 +21,7 @@ const communityLinks: FooterOptionType[] = [
   },
 ];
 
-const directLinks: FooterOptionType[] = [
+const directLinks: Array<FooterOptionType> = [
   { title: "Hackathons", path: "" },
   {
     title: "Open Source",
@@ -35,7 +35,7 @@ const directLinks: FooterOptionType[] = [
   },
 ];
 
-const socialLinks: SocialLinkType[] = [
+const socialLinks: Array<SocialLinkType> = [
   {
     iconPath: "discord-icon.svg",
     label: "discord",

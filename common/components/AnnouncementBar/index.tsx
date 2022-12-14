@@ -7,11 +7,11 @@ import { AnnouncementBarType } from "@/types/announcement-bar-type";
 // Icon Imports
 import { FaTimes } from "react-icons/fa";
 
-export default function AnnouncementBar({
+const AnnouncementBar: React.FunctionComponent<AnnouncementBarType> = ({
   children,
   color = "bg-product-red",
   isClosable = true,
-}: AnnouncementBarType) {
+}) => {
   const [announcementBarVisibility, setAnnouncementBarVisibility] =
     useState(isClosable);
   const [announcementBarColor, setAnnouncementBarColor] = useState(color);
@@ -63,29 +63,33 @@ export default function AnnouncementBar({
 
   if (announcementBarVisibility) {
     return (
-      <div
-        className={`announcement-bar py-1.5 ${announcementBarColor} 
+      <React.Fragment>
+        <div
+          className={`announcement-bar py-1.5 ${announcementBarColor} 
                 ${announcementBarVisibility ? "block" : "invisible"}`}
-      >
-        <div className="announcement-bar-content-wrapper wrapped-view flex flex-row items-center justify-between">
-          <div
-            className={`announcement-bar-content-wrapper w-fit h-fit mx-auto ${announcementBarTextColor}`}
-          >
-            {children}
-          </div>
-          {announcementBarVisibility && (
-            <button
-              className={`announcement-bar-close-button-wrapper
+        >
+          <div className="announcement-bar-content-wrapper wrapped-view flex flex-row items-center justify-between">
+            <div
+              className={`announcement-bar-content-wrapper w-fit h-fit mx-auto ${announcementBarTextColor}`}
+            >
+              {children}
+            </div>
+            {announcementBarVisibility && (
+              <button
+                className={`announcement-bar-close-button-wrapper
                         w-fit h-fit flex flex-row items-center justify-center ${announcementBarTextColor}
                         bg-transparent hover:bg-black hover:bg-opacity-20 p-0.5 rounded-full text-xs`}
-              onClick={() => setAnnouncementBarVisibility(false)}
-            >
-              <FaTimes />
-            </button>
-          )}
+                onClick={() => setAnnouncementBarVisibility(false)}
+              >
+                <FaTimes />
+              </button>
+            )}
+          </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
   return <React.Fragment></React.Fragment>;
-}
+};
+
+export default AnnouncementBar;
