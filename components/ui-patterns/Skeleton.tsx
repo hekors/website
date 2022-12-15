@@ -1,6 +1,6 @@
 import { SkeletonType } from '@/types/ui-pattern-types/skeleton-types';
 import React, { useRef } from 'react';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
 const HackathonCardSkeleton: React.FunctionComponent<SkeletonType> = ({
@@ -39,7 +39,27 @@ const SessionCardSkeleton: React.FunctionComponent<SkeletonType> = ({
     )
 }
 
+const CommunityNarrativesCardSkeleton: React.FunctionComponent<SkeletonType> = ({
+    visibility
+}) => {
+    return (
+        <React.Fragment>
+            <div className="community-narratives-skeleton-card bg-white rounded-md w-fit h-auto px-3 py-5">
+                <div className="community-narratives-skeleton-card-content-wrapper w-[280px] pr-16">
+                    <Skeleton height={16} />
+                    <div className="mt-3 grid grid-cols-1 gap-0.5">
+                        <Skeleton height={8} width="70%" />
+                        <Skeleton height={8} width="70%" />
+                    </div>
+                    <Skeleton height={32} width={32} className="mt-2" circle />
+                </div>
+            </div>
+        </React.Fragment>
+    )
+}
+
 export {
     HackathonCardSkeleton,
-    SessionCardSkeleton
+    SessionCardSkeleton,
+    CommunityNarrativesCardSkeleton
 }

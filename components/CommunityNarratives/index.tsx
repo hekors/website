@@ -1,5 +1,7 @@
 // Basic Imports
+import Image from "next/image";
 import React, { useState } from "react";
+import { CommunityNarrativesCardSkeleton } from "../ui-patterns/Skeleton";
 
 const CommunityNarratives: React.FunctionComponent = () => {
   // TODO
@@ -18,7 +20,8 @@ const CommunityNarratives: React.FunctionComponent = () => {
           <h1 className="community-narratives-headline font-product-bungee text-product-brown text-4xl mt-2">
             {"listen from the community"}
           </h1>
-          <div className="community-narratives-list-wrapper mt-12">
+          <div className="community-narratives-list-wrapper mt-12 h-auto flex flex-row items-center justify-between">
+            <div className="grid grid-cols-2 items-start justify-start gap-8 w-fit h-auto">
             {communityNarrativesData?.length > 0 ? (
               communityNarrativesData?.map(
                 (communityNarrative: any, communityNarrativeIndex: number) => (
@@ -26,10 +29,21 @@ const CommunityNarratives: React.FunctionComponent = () => {
                 )
               )
             ) : (
-              <span className="text-base text-product-brown text-opacity-50 select-none cursor-default font-semibold">
-                {"Community Narratives loading..."}
-              </span>
+              <React.Fragment>
+                <CommunityNarrativesCardSkeleton />
+                <CommunityNarrativesCardSkeleton />
+                <CommunityNarrativesCardSkeleton />
+                <CommunityNarrativesCardSkeleton />
+              </React.Fragment>
             )}
+            </div>
+            <div className="community-narratives-illustration-wrapper">
+              <Image src="/community-narratives-illustration.svg"
+                width="366"
+                height="380"
+                alt="community-narrartives-illustration"
+              />
+            </div>
           </div>
         </div>
       </section>
