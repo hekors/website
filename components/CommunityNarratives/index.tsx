@@ -1,7 +1,7 @@
 // Basic Imports
 import Image from "next/image";
 import React, { useState } from "react";
-import { CommunityNarrativesCardSkeleton } from "../ui-patterns/Skeleton";
+import { CommunityNarrativesCardSkeleton } from "@/components/ui-patterns/Skeleton";
 
 const CommunityNarratives: React.FunctionComponent = () => {
   // TODO

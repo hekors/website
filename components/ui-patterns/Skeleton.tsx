@@ -46,12 +46,28 @@ const CommunityNarrativesCardSkeleton: React.FunctionComponent<SkeletonType> = (
         <React.Fragment>
             <div className="community-narratives-skeleton-card bg-white rounded-md w-fit h-auto px-3 py-5">
                 <div className="community-narratives-skeleton-card-content-wrapper w-[280px] pr-16">
-                    <Skeleton height={16} />
+                    <Skeleton height={16} style={{ opacity: `${visibility}%` }} />
                     <div className="mt-3 grid grid-cols-1 gap-0.5">
-                        <Skeleton height={8} width="70%" />
-                        <Skeleton height={8} width="70%" />
+                        <Skeleton height={8} width="70%" style={{ opacity: `${visibility}%` }} />
+                        <Skeleton height={8} width="70%" style={{ opacity: `${visibility}%` }} />
                     </div>
-                    <Skeleton height={32} width={32} className="mt-2" circle />
+                    <Skeleton height={32} width={32} className="mt-2" style={{ opacity: `${visibility}%` }} circle  />
+                </div>
+            </div>
+        </React.Fragment>
+    )
+}
+
+const TeamMemberCardSkeleton: React.FunctionComponent<SkeletonType> = ({
+    visibility
+}) => {
+    return (
+        <React.Fragment>
+            <div className="team-member-skeleton-card w-[280px] h-[370px] border border-white p-4 flex flex-col items-stretch justify-between">
+                <Skeleton height={180} style={{ opacity: `${visibility}%` }} />
+                <div>
+                    <Skeleton height={16} style={{ opacity: `${visibility}%` }} className="mb-4" />
+                    <Skeleton height={8} style={{ opacity: `${visibility}%` }} count={3} />
                 </div>
             </div>
         </React.Fragment>
@@ -61,5 +77,6 @@ const CommunityNarrativesCardSkeleton: React.FunctionComponent<SkeletonType> = (
 export {
     HackathonCardSkeleton,
     SessionCardSkeleton,
-    CommunityNarrativesCardSkeleton
+    CommunityNarrativesCardSkeleton,
+    TeamMemberCardSkeleton
 }
