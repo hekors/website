@@ -1,9 +1,8 @@
-
 type ButtonType = {
-    children?: any,
-    type?: string,
-    shade?: string,
-    isActive?: boolean
+  children?: any;
+  type?: string;
+  shade?: string;
+  isActive?: boolean;
 };
 
 export type { ButtonType };

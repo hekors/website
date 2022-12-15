@@ -1,8 +1,7 @@
-
 type AnnouncementBarType = {
-    children?: any,
-    color?: string,
-    isClosable?: boolean
+  children?: any;
+  color?: string;
+  isClosable?: boolean;
 };
 
 export type { AnnouncementBarType };
