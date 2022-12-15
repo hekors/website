@@ -1,6 +1,8 @@
 
-type CardSkeletonType = {
-    visibility?: string
+type SkeletonType = {
+    visibility?: number
 };
 
-export type { CardSkeletonType };
+export type {
+    SkeletonType
+};
