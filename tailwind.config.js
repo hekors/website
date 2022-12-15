@@ -6,11 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      "fontFamily": {
+      fontFamily: {
         "product-manrope": ["Manrope", "sans-serif"],
-        "product-bungee": ["Bungee", "cursive"]
+        "product-bungee": ["Bungee", "cursive"],
       },
-      "colors": {
+      colors: {
         "product-red": "#FF4E4E",
         "product-pink": "#FF008A",
         "product-orange": "#FF833E",
@@ -19,9 +19,9 @@ module.exports = {
         "product-teal": "#12C0AB",
         "product-yellow": "#FFB800",
         "product-blue": "#4E95FF",
-        "product-brown": "#231C18"
-      }
+        "product-brown": "#231C18",
+      },
     },
   },
   plugins: [],
-}
+};

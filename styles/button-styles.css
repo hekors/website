@@ -1,13 +1,12 @@
-
 /* components > ui-patterns > buttons */
 .product-button {
-    @apply px-8 py-2 text-center transition-all hover:scale-95;
+  @apply px-8 py-2 text-center transition-all hover:scale-95;
 }
 
 .product-button-secondary {
-    @apply border-2 border-black bg-white text-black;
+  @apply border-2 border-black bg-white text-black;
 }
 
 .product-button-primary {
-    @apply border-2 border-black bg-black text-white;
+  @apply border-2 border-black bg-black text-white;
 }

@@ -1,6 +1,5 @@
-
 type CalloutType = {
-    children?: any
+  children?: React.ReactNode | any;
 };
 
 export type { CalloutType };

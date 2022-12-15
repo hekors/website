@@ -1,7 +1,6 @@
-
 type NavbarOptionType = {
-    label?: string,
-    path?: any | string
-}
+  label?: string;
+  path?: any | string;
+};
 
 export type { NavbarOptionType };

@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 /* importing style modules */
-@import url('./typography.css');
-@import url('./button-styles.css');
+@import url("./typography.css");
+@import url("./button-styles.css");
 
-body, html {
-  @apply font-product-manrope; 
+body,
+html {
+  @apply font-product-manrope;
 }
 
 .wrapped-view {
@@ -20,7 +21,7 @@ body, html {
 }
 
 .checks-container {
-  background-image: url('../public/checks-bg.svg');
+  background-image: url("../public/checks-bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   @apply py-24;
@@ -34,7 +35,7 @@ body, html {
 
 /* Track */
 *::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.200);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 100px;
 }
 
