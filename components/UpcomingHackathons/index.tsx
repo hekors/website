@@ -9,6 +9,7 @@ import Button from "@/components/ui-patterns/Button";
 
 // Types Imports
 import { HackathonCardType } from "@/types/hackathon-types";
+import { HackathonCardSkeleton } from "@/components/ui-patterns/Skeleton";
 
 const UpcomingHackathons: React.FunctionComponent<HackathonCardType> = () => {
   const [upcomingHackathonsData, setUpcomingHackathonsData] = useState<any>([]);
@@ -66,9 +67,12 @@ const UpcomingHackathons: React.FunctionComponent<HackathonCardType> = () => {
               )
             )
           ) : (
-            <span className="text-base text-white text-opacity-50 select-none cursor-default font-semibold">
-              {"Upcoming Hackathons list loading..."}
-            </span>
+              <div className="skeleton-loading-cards-wrapper grid grid-cols-4 items-start justify-start gap-3">
+                <HackathonCardSkeleton />
+                <HackathonCardSkeleton />
+                <HackathonCardSkeleton />
+                <HackathonCardSkeleton />
+              </div>
           )}
         </div>
       </section>
