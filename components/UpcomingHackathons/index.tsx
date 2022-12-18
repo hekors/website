@@ -42,7 +42,7 @@ const UpcomingHackathons: React.FunctionComponent<HackathonCardType> = () => {
               {"Upcoming Hackathons"}
             </h1>
           </div>
-          <Button type="secondary" shade="product-orange">
+          <Button type="secondary" shade="product-teal">
             {"See past hackathons"}
           </Button>
         </div>

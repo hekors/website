@@ -20,7 +20,7 @@ const UpcomingSessions: React.FunctionComponent = () => {
                   {"Upcoming Sessions"}
                 </h1>
               </div>
-              <Button type="secondary" shade="product-orange">
+              <Button type="secondary" shade="product-teal">
                 {"See past sessions"}
               </Button>
             </div>
