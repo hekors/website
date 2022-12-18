@@ -11,6 +11,7 @@ import { TeamMemberCardType } from "@/types/team-type";
 
 // Icon Imports
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { TeamMemberCardSkeleton } from "@/components/ui-patterns/Skeleton";
 
 const Team: React.FunctionComponent<TeamMemberCardType> = () => {
   const [teamMembersData, setTeamMembersData] = useState<any>([]);
@@ -71,9 +72,12 @@ const Team: React.FunctionComponent<TeamMemberCardType> = () => {
                 )
               )
             ) : (
-              <span className="text-base text-white text-opacity-50 select-none cursor-default font-semibold">
-                {"Team mates list loading..."}
-              </span>
+              <div className="skeleton-loading-cards-wrapper grid grid-cols-4 items-start justify-start gap-12">
+                <TeamMemberCardSkeleton visibility={20} />
+                <TeamMemberCardSkeleton visibility={20} />
+                <TeamMemberCardSkeleton visibility={20} />
+                <TeamMemberCardSkeleton visibility={20} />
+              </div>
             )}
           </div>
         </div>
