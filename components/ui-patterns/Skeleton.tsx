@@ -10,7 +10,12 @@ const HackathonCardSkeleton: React.FunctionComponent<SkeletonType> = ({
         <React.Fragment>
             <div
                 className="hackathon-card-skeleton w-[280px] h-[320px] flex flex-col border border-white hover:scale-105 transition-all items-center justify-end">
-                <div className="upcoming-hackathon-card-skeleton-cover-image-wrapper h-full w-full"/>
+                <div className="session-card-skeleton-cover-image-wrapper h-full w-full border-b border-product-brown px-4 py-6">
+                    <Skeleton 
+                        height={120}
+                        style={{ opacity: "10%" }}
+                    />
+                </div>
                 <div className="upcoming-hackathon-card-skeleton-content-wrapper px-4 py-6 bg-white w-full h-fit">
                     <Skeleton height={12} count={1} style={{ opacity: `${visibility}%` }} />
                     <Skeleton height={8} count={2} style={{ opacity: `${visibility}%` }} />
