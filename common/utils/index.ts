@@ -5,7 +5,7 @@ function mediaURL(fileName: string) {
 }
 
 // utility method to parse date from type (yyyy-mm-dd) ---> to type object : { year, month, date }
-function parseDate(date: string = "") {
+function parseDate(date = "") {
   const allMonths: any = {
     "01": "Jan",
     "02": "Feb",
