@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
+// JSON Imports
+import TeamMembersData from '@/common/dataSource/team-data.json';
+
 // Components Imports
 import { getTeamData } from "@/middleware/teams-api";
 
@@ -14,21 +17,23 @@ import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { TeamMemberCardSkeleton } from "@/components/ui-patterns/Skeleton";
 
 const Team: React.FunctionComponent<TeamMemberCardType> = () => {
-  const [teamMembersData, setTeamMembersData] = useState<any>([]);
+  const [teamMembersData, setTeamMembersData] = useState<any>(TeamMembersData);
 
-  useEffect(() => {
-    (async () => {
-      await getTeamData()
-        .then((dataResponse) => {
-          console.log("logging from team", dataResponse);
-          setTeamMembersData(dataResponse);
-        })
-        .catch((err) => {
-          console.log("Error log from Teams Page: ", err);
-        });
-    }).call({});
-    console.log("data from component: ", teamMembersData);
-  }, []);
+  // START: temporary code removal: THIS CODE BLOCK WILL BE UNDER USAGE AFTER STRAPI FIX ========
+  // useEffect(() => {
+  //   (async () => {
+  //     await getTeamData()
+  //       .then((dataResponse) => {
+  //         console.log("logging from team", dataResponse);
+  //         setTeamMembersData(dataResponse);
+  //       })
+  //       .catch((err) => {
+  //         console.log("Error log from Teams Page: ", err);
+  //       });
+  //   }).call({});
+  //   console.log("data from component: ", teamMembersData);
+  // }, []);
+  // END: temporary code removal: THIS CODE BLOCK WILL BE UNDER USAGE AFTER STRAPI FIX ========
 
   return (
     <React.Fragment>
@@ -100,7 +105,7 @@ function TeamMemberCard(
   return (
     <React.Fragment>
       <div
-        className="team-member-card-wrapper flex flex-col items-start justify-start gap-3 w-fit max-w-[280px]"
+        className="team-member-card-wrapper flex flex-col items-stretch justify-start gap-3 w-fit max-w-[280px]"
         {...props}
       >
         <div className="team-member-picture-cotainer relative border-2 border-white">

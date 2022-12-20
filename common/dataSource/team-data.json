@@ -1,0 +1,56 @@
+[
+    {
+        "picture": "/team/yash.jpg",
+        "fullName": {
+            "firstName": "Yash",
+            "lastName": "Sehgal"
+        },
+        "isAvenger": true,
+        "directWebsite": {
+            "label": "website/yashsehgal",
+            "link": "https://yashsehgal.com"
+        },
+        "socialProfile": {
+            "twitterUsername": "yashsehgaldev",
+            "instagramUsername": "sehgalyash_",
+            "linkedInUsername": "sehgalyash",
+            "githubUsername": "yashsehgal"
+        }
+    },
+    {
+        "picture": "/team/sumit.jpg",
+        "fullName": {
+            "firstName": "Sumit",
+            "lastName": "Singh"
+        },
+        "isAvenger": true,
+        "directWebsite": {
+            "label": "website/wh0sumit",
+            "link": "http://wh0sumit.vercel.app"
+        },
+        "socialProfile": {
+            "twitterUsername": "wh0sumit",
+            "instagramUsername": "wh0sumit",
+            "linkedInUsername": "wh0sumit",
+            "githubUsername": "wh0sumit"
+        }
+    },
+    {
+        "picture": "/team/ayush.jpg",
+        "fullName": {
+            "firstName": "Ayush",
+            "lastName": "Soni"
+        },
+        "isAvenger": true,
+        "directWebsite": {
+            "label": "website/ayushsoni1010",
+            "link": "http://ayushsoni1010.com"
+        },
+        "socialProfile": {
+            "twitterUsername": "ayushsoni1010",
+            "instagramUsername": "aayushsoni1010",
+            "linkedInUsername": "ayushsoni1010",
+            "githubUsername": "ayushsoni1010"
+        }
+    }
+]
