@@ -38,7 +38,8 @@ const Home: NextPage = () => {
         <OrganizeWithUs />
         <Team />
         <HackathonCTA />
-        <CommunityNarratives />
+        {/* REMOVING COMMUNITY NARRATIVES SECTION UNTIL FURTHER UPDATES */}
+        {/* <CommunityNarratives /> */}
       </div>
     </React.Fragment>
   );
