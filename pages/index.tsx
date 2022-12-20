@@ -5,7 +5,6 @@ import { NextPage } from "next";
 
 // Components Imports
 import Callout from "@/components/Callout";
-import CommunityNarratives from "@/components/CommunityNarratives";
 import EmojiLayer from "@/components/EmojiLayer";
 import GetStarted from "@/components/GetStarted";
 import HackathonCTA from "@/components/HackathonCTA";

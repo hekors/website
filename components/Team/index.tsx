@@ -1,13 +1,10 @@
 // Basic Imports
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 // JSON Imports
 import TeamMembersData from '@/common/dataSource/team-data.json';
-
-// Components Imports
-import { getTeamData } from "@/middleware/teams-api";
 
 // Types Imports
 import { TeamMemberCardType } from "@/types/team-type";
