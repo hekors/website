@@ -1,9 +1,6 @@
 // Types Imports
 import { FooterOptionType, SocialLinkType } from "@/types/footer-option-type";
 
-// Icon Imports
-import { AiOutlineTwitter } from "react-icons/ai";
-
 const communityLinks: Array<FooterOptionType> = [
   { title: "Contact Us", link: "https://github.com/hekors" },
   { title: "Organize with HEKORS", link: "https://github.com/hekors/.github" },
