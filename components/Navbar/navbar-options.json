@@ -2,9 +2,5 @@
   {
     "label": "🗓️ Past Events",
     "path": "/events/past-events"
-  },
-  {
-    "label": "🚀 Our Community",
-    "path": "/community"
   }
 ]
