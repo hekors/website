@@ -4,14 +4,16 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 // JSON Imports
-import TeamMembersData from '@/common/dataSource/team-data.json';
+import TeamMembersData from "@/common/dataSource/team-data.json";
+
+// Components Imports
+import { TeamMemberCardSkeleton } from "@/components/ui-patterns/Skeleton";
 
 // Types Imports
 import { TeamMemberCardType } from "@/types/team-type";
 
 // Icon Imports
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import { TeamMemberCardSkeleton } from "@/components/ui-patterns/Skeleton";
 
 const Team: React.FunctionComponent<TeamMemberCardType> = () => {
   const [teamMembersData, setTeamMembersData] = useState<any>(TeamMembersData);

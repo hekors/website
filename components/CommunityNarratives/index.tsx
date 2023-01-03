@@ -1,6 +1,8 @@
 // Basic Imports
-import Image from "next/image";
 import React, { useState } from "react";
+import Image from "next/image";
+
+// Components Imports
 import { CommunityNarrativesCardSkeleton } from "@/components/ui-patterns/Skeleton";
 
 const CommunityNarratives: React.FunctionComponent = () => {
@@ -22,23 +24,25 @@ const CommunityNarratives: React.FunctionComponent = () => {
           </h1>
           <div className="community-narratives-list-wrapper mt-12 h-auto flex flex-row items-center justify-between">
             <div className="grid grid-cols-2 items-start justify-start gap-8 w-fit h-auto">
-            {communityNarrativesData?.length > 0 ? (
-              communityNarrativesData?.map(
-                (communityNarrative: any, communityNarrativeIndex: number) => (
-                  <div key={communityNarrativeIndex} />
+              {communityNarrativesData?.length > 0 ? (
+                communityNarrativesData?.map(
+                  (
+                    communityNarrative: any,
+                    communityNarrativeIndex: number
+                  ) => <div key={communityNarrativeIndex} />
                 )
-              )
-            ) : (
-              <React.Fragment>
-                <CommunityNarrativesCardSkeleton />
-                <CommunityNarrativesCardSkeleton />
-                <CommunityNarrativesCardSkeleton />
-                <CommunityNarrativesCardSkeleton />
-              </React.Fragment>
-            )}
+              ) : (
+                <React.Fragment>
+                  <CommunityNarrativesCardSkeleton />
+                  <CommunityNarrativesCardSkeleton />
+                  <CommunityNarrativesCardSkeleton />
+                  <CommunityNarrativesCardSkeleton />
+                </React.Fragment>
+              )}
             </div>
             <div className="community-narratives-illustration-wrapper">
-              <Image src="/community-narratives-illustration.svg"
+              <Image
+                src="/community-narratives-illustration.svg"
                 width="366"
                 height="380"
                 alt="community-narrartives-illustration"
