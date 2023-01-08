@@ -3,7 +3,7 @@ import React from "react";
 import { NextPage } from "next";
 
 // Components Imports
-import Callout from "@/components/Callout";
+import Callout from "@/components/ui-patterns/Callout";
 
 const MLH: NextPage = () => {
   return (

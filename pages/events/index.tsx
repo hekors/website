@@ -5,7 +5,7 @@ import Link from "next/link";
 import { NextPage } from "next";
 
 // Components Imports
-import Callout from "@/components/Callout";
+import Callout from "@/components/ui-patterns/Callout";
 import OrganizeWithUs from "@/components/OrganizeWithUs";
 import Button from "@/components/ui-patterns/Button";
 import UpcomingHackathons from "@/components/UpcomingHackathons";
