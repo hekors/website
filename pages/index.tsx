@@ -11,10 +11,12 @@ import HackathonCTA from "@/components/HackathonCTA";
 import OrganizeWithUs from "@/components/OrganizeWithUs";
 import Team from "@/components/Team";
 import Button from "@/components/ui-patterns/Button";
+import MetaHead from "@/components/MetaHead";
 
 const Home: NextPage = () => {
   return (
     <React.Fragment>
+      <MetaHead title="HEKORS Community" description="Learn in public, Build in public" />
       <div className="home">
         <main className="checks-container">
           <div className="hero-section-wrapper w-fit h-auto mx-auto flex flex-col items-center justify-between mb-16">

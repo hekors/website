@@ -22,9 +22,14 @@ const UpcomingSessions: React.FunctionComponent = () => {
                   {"Upcoming Sessions"}
                 </h1>
               </div>
-              <Button type="secondary" shade="product-teal">
-                {"See past sessions"}
-              </Button>
+              <div className="flex flex-row items-center justify-end gap-6">
+                <Button type="secondary" shade="product-pink">
+                  {"All Hackathons"}
+                </Button>
+                <Button type="secondary" shade="product-teal">
+                  {"See past sessions"}
+                </Button>
+              </div>
             </div>
             <div className="upcoming-sessions-list-wrapper wrapped-view mt-20">
               {upcomingSessionsData?.length > 0 ? (

@@ -42,9 +42,14 @@ const UpcomingHackathons: React.FunctionComponent<HackathonCardType> = () => {
               {"Upcoming Hackathons"}
             </h1>
           </div>
-          <Button type="secondary" shade="product-teal">
-            {"See past hackathons"}
-          </Button>
+          <div className="flex flex-row items-center justify-end gap-6">
+            <Button type="secondary" shade="product-pink">
+              {"All Hackathons"}
+            </Button>
+            <Button type="secondary" shade="product-teal">
+              {"See past hackathons"}
+            </Button>
+          </div>
         </div>
         <div className="upcoming-hackathons-list-wrapper wrapped-view mt-20">
           {upcomingHackathonsData?.length > 0 ? (

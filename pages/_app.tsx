@@ -4,7 +4,6 @@ import Link from "next/link";
 import type { AppProps } from "next/app";
 
 // Components Imports
-import MetaHead from "@/components/MetaHead";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnnouncementBar from "@/components/AnnouncementBar";
@@ -18,7 +17,6 @@ const App: React.FunctionComponent<AppProps> = ({
 }: AppProps) => {
   return (
     <React.Fragment>
-      <MetaHead />
       <AnnouncementBar>
         <div className="announcement-content">
           <span className="text-xs flex flex-row items-center justify-start gap-1">

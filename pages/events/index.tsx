@@ -10,10 +10,12 @@ import OrganizeWithUs from "@/components/OrganizeWithUs";
 import Button from "@/components/ui-patterns/Button";
 import UpcomingHackathons from "@/components/UpcomingHackathons";
 import UpcomingSessions from "@/components/UpcomingSessions";
+import MetaHead from "@/components/MetaHead";
 
 const Events: NextPage = () => {
   return (
     <React.Fragment>
+      <MetaHead title={`${new Date().getFullYear()} Season`} description="Hackathons, Sessions & Events" />
       <div className="events">
         <div className="checks-container">
           <div className="wrapped-view flex flex-row items-center justify-evenly">
