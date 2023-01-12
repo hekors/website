@@ -26,6 +26,7 @@
     "postcss": "^8.4.19",
     "react-icons": "^4.6.0",
     "react-loading-skeleton": "^3.1.0",
+    "react-tooltip": "^5.5.1",
     "tailwindcss": "^3.2.4"
   }
 }
