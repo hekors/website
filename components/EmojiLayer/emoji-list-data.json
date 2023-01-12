@@ -5,7 +5,8 @@
   },
   {
     "name": "school-bag",
-    "imageName": "school-bag-emoji.svg"
+    "imageName": "school-bag-emoji.svg",
+    "isHighlighted": true
   },
   {
     "name": "color-palette",

@@ -10,6 +10,7 @@ import AnnouncementBar from "@/components/AnnouncementBar";
 
 // Styles Imports
 import "@/styles/globals.css";
+import 'react-tooltip/dist/react-tooltip.css'
 
 const App: React.FunctionComponent<AppProps> = ({
   Component,
@@ -20,15 +21,15 @@ const App: React.FunctionComponent<AppProps> = ({
       <AnnouncementBar>
         <div className="announcement-content">
           <span className="text-xs flex flex-row items-center justify-start gap-1">
-            {"We're coming up with a series of sessions on Design Engineering"}
+            {"Build Program by HEKORS is now live"}
             <span>
-              Checkout the session{" "}
+              Applications are now open, start from{" "}
               <Link
-                href="https://www.youtube.com/@hekorscommunity/"
+                href="https://hekors-build-program.vercel.app/"
                 target="_blank"
                 className="underline"
               >
-                playlist here
+                {"🎒 Build Program"}
               </Link>
             </span>
           </span>
