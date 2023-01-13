@@ -6,7 +6,8 @@
   {
     "name": "school-bag",
     "imageName": "school-bag-emoji.svg",
-    "isHighlighted": true
+    "isHighlighted": true,
+    "isActive": true
   },
   {
     "name": "color-palette",
