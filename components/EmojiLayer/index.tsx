@@ -43,16 +43,9 @@ const EmojiLayer: React.FunctionComponent<EmojiType> = () => {
                     <ModalView isOpen={highlitablePopupView} modalViewAction={setHighlightablePopupView}>
                       <h1 className="leading-snug text-lg font-semibold">{"🎒 Build Program is now live"}</h1>
                       <p className="leading-6  text-gray-500 font-medium text-sm mt-4 w-[42ch]">
-                        {"The Build Program by HEKORS is now live. Applications are open till 15th Jan"}
+                        {"The Build Program by HEKORS is now live. The Program will be running for next 1.5 months"}
                       </p>
                       <div className="my-6 flex flex-col items-start justify-start gap-3">
-                        <Link 
-                          href="https://bit.ly/hekors-build-program-registration"
-                          target={"_blank"}
-                          className="underline font-medium text-product-blue"
-                        >
-                          {"→ Apply here for the Build Program"}
-                        </Link>
                         <Link
                           href="https://hekors-build-program.vercel.app/"
                           target={"_blank"}
