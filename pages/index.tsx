@@ -17,11 +17,11 @@ const Home: NextPage = () => {
   return (
     <React.Fragment>
       <MetaHead title="HEKORS Community" description="Learn in public, Build in public" />
-      <div className="home">
+      <div className="home max-sm:overflow-hidden">
         <main className="checks-container">
           <div className="hero-section-wrapper w-fit h-auto mx-auto flex flex-col items-center justify-between mb-16">
             <Callout>{"Our Mission"}</Callout>
-            <h1 className="font-product-bungee text-7xl mt-6 flex flex-col items-center justify-between gap-4">
+            <h1 className="font-product-bungee text-7xl mt-6 flex flex-col items-center justify-between gap-4 max-sm:text-4xl">
               <span>{"Learn in public."}</span>
               <span>{"Build in public."}</span>
             </h1>

@@ -15,9 +15,9 @@ type Props = FooterOptionType | SocialLinkType;
 const Footer: React.FunctionComponent<Props> = () => {
   return (
     <React.Fragment>
-      <section className="footer-section my-24 py-12">
+      <section className="footer-section my-24 py-12 max-sm:mb-8 max-sm:mt-0 max-sm:py-0">
         <div className="footer-content-wrapper wrapped-view border-b pb-6">
-          <div className="logo-wrapper flex flex-row items-start justify-start w-fit h-auto gap-3">
+          <div className="logo-wrapper flex flex-row items-start justify-start w-fit h-auto gap-3 max-sm:items-center max-sm:mx-auto ">
             <Image src="/hekors-logo.svg" alt="hekors" width="60" height="60" />
             <span className="hekors-title-tagline-wrapper flex flex-col items-start justify-start w-fit h-auto">
               <span className="hekors-title font-product-bungee text-product-brown text-3xl">
@@ -28,8 +28,8 @@ const Footer: React.FunctionComponent<Props> = () => {
               </span>
             </span>
           </div>
-          <div className="footer-links-content-wrapper mt-20 flex flex-row items-start justify-between">
-            <div className="discord-cta-container">
+          <div className="footer-links-content-wrapper mt-20 flex flex-row items-start justify-between max-sm:flex-col max-sm:items-center">
+            <div className="discord-cta-container max-sm:text-center">
               <h2 className="font-semibold font-product-bungee text-2xl w-[280px] mb-6">
                 <span className="text-product-brown">
                   {"make sure you join the"}
@@ -40,7 +40,7 @@ const Footer: React.FunctionComponent<Props> = () => {
                 {"Join Discord"}
               </Button>
             </div>
-            <div className="footer-links-sections-wrapper">
+            <div className="footer-links-sections-wrapper max-sm:pt-24">
               <div className="flex flex-row items-start justify-end gap-12">
                 <div className="footer-links__community-links-wrapper">
                   <h2 className="leading-snug font-product-bungee text-lg text-product-red">
