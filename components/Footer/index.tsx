@@ -41,7 +41,7 @@ const Footer: React.FunctionComponent<Props> = () => {
               </Button>
             </div>
             <div className="footer-links-sections-wrapper max-sm:pt-24">
-              <div className="flex flex-row items-start justify-end gap-12">
+              <div className="flex flex-row items-start justify-end gap-12 max-sm:justify-center">
                 <div className="footer-links__community-links-wrapper">
                   <h2 className="leading-snug font-product-bungee text-lg text-product-red">
                     {"Community"}
@@ -109,7 +109,7 @@ const Footer: React.FunctionComponent<Props> = () => {
                   </ul>
                 </div>
               </div>
-              <div className="social-links-layer-wrapper mt-24 flex flex-row items-center justify-end gap-2">
+              <div className="social-links-layer-wrapper mt-24 flex flex-row items-center justify-end gap-2 max-sm:justify-center">
                 {socialLinks?.map(
                   (socialLink: SocialLinkType, socialLinkIndex: number) => (
                     <Link
