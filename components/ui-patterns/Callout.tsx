@@ -6,13 +6,13 @@ import Image from "next/image";
 import { CalloutType } from "@/types/ui-pattern-types/callout-type";
 
 const Callout: React.FunctionComponent<CalloutType> = (
-  { children }: CalloutType,
+  { children, className }: CalloutType,
   props: any
 ) => {
   return (
     <React.Fragment>
       <span
-        className="callout text-product-gradient flex flex-row items-center justify-center gap-1 w-fit h-fit"
+        className={`callout text-product-gradient flex flex-row items-center justify-center gap-1 w-fit h-fit ${className}`}
         {...props}
       >
         <span className="callout-icon-wrapper">

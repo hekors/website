@@ -20,9 +20,9 @@ const App: React.FunctionComponent<AppProps> = ({
     <React.Fragment>
       <AnnouncementBar>
         <div className="announcement-content">
-          <span className="text-xs flex flex-row items-center justify-start gap-1">
+          <span className="text-xs flex flex-row items-center justify-start gap-1 max-sm:flex-col">
             {"Build Program by HEKORS is now live"}
-            <span>
+            <span className="max-sm:mb-1">
               Applications are now open, start from{" "}
               <Link
                 href="https://hekors-build-program.vercel.app/"

@@ -10,6 +10,10 @@ module.exports = {
         "product-manrope": ["Manrope", "sans-serif"],
         "product-bungee": ["Bungee", "cursive"],
       },
+      fontSize: {
+        "product-xl": '1.6875rem',
+        "product-sm": '0.8125rem',
+      },
       colors: {
         "product-red": "#FF4E4E",
         "product-pink": "#FF008A",
