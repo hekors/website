@@ -18,12 +18,12 @@ const Events: NextPage = () => {
       <MetaHead title={`${new Date().getFullYear()} Season`} description="Hackathons, Sessions & Events" />
       <div className="events">
         <div className="checks-container">
-          <div className="wrapped-view flex flex-row items-center justify-evenly">
-            <div className="hero-section-wrapper w-fit h-auto flex flex-col items-start justify-between mb-16">
-              <Callout>
+          <div className="wrapped-view flex flex-row items-center justify-evenly max-sm:flex-col">
+            <div className="hero-section-wrapper w-fit h-auto flex flex-col items-start justify-between mb-16 max-sm:items-center">
+              <Callout className="small-callout max-sm:flex max-sm:flex-row max-sm:justify-evenly max-sm:w-[60%]">
                 {"Attend Hackathons, Offline Meetups and much more"}
               </Callout>
-              <h1 className="font-product-bungee text-5xl mt-6 flex flex-col items-start justify-between gap-4">
+              <h1 className="font-product-bungee text-5xl mt-6 flex flex-col items-start justify-between gap-4 max-sm:items-center max-sm:text-4xl max-sm:gap-1 max-sm:mt-10 " >
                 <span>{"Events in season"}</span>
                 <span>
                   {new Date().getFullYear() +
@@ -37,6 +37,7 @@ const Events: NextPage = () => {
             </div>
             <div className="illustration-wrapper">
               <Image
+                className="w-[300px]"
                 src="/skills-illustration.svg"
                 width="366"
                 height="380"
@@ -46,8 +47,8 @@ const Events: NextPage = () => {
           </div>
         </div>
         <div className="upcoming-hackathons-section-wrapper">
-          <UpcomingHackathons />
           <UpcomingSessions />
+          <UpcomingHackathons />
           <OrganizeWithUs />
         </div>
       </div>

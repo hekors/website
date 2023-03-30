@@ -1,6 +1,9 @@
 [
   {
-    "title": "🔮 Open Source",
+    "title": {
+      "emoji": "🔮",
+      "text" : "Open Source"
+    },
     "bgColor": "bg-product-red",
     "description": [
       "Get started by contributing to open source projects with a wide range of technology stack - Such as React"
@@ -9,7 +12,10 @@
     "hasNewTab": true
   },
   {
-    "title": "🎨 Designing Sessions",
+    "title": {
+      "emoji": "🎨",
+      "text" : "Designing Sessions"
+    },
     "bgColor": "bg-product-purple-light",
     "description": [
       "Join our sprint based design sessions on Discord. Learn about UX Design, UI Design/Dev, Design Systems Engineering, Graphic Design and building some cool stuff"
@@ -17,7 +23,10 @@
     "path": "/design-sessions"
   },
   {
-    "title": "💻 Hackathons with MLH",
+    "title": {
+      "emoji": "💻",
+      "text" : "Hackathons with MLH"
+    },
     "bgColor": "bg-product-yellow",
     "description": [
       "We actively participate in MLH organized hackathons and events. Join HEKORS guild and learn through building cool projects - Build your project portfolio"
@@ -25,7 +34,10 @@
     "path": "/hackathons/with-mlh"
   },
   {
-    "title": "🎉 Offline Meetups",
+    "title": {
+      "emoji": "🎉",
+      "text" : "Offline Meetups"
+    },
     "bgColor": "bg-white",
     "description": [
       "Join us in offline meetups where we connect in person with all the community members. Checkout for upcoming offline meetups."
@@ -34,7 +46,10 @@
     "hasNewTab": true
   },
   {
-    "title": "📷 Community Gallery",
+    "title": {
+      "emoji": "📷",
+      "text" : "Community Gallery"
+    },
     "bgColor": "bg-product-pink",
     "description": [
       "A small and fun gallery of our online/offline meetups, team outings, events and hackathons we've been to."

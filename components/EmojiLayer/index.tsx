@@ -18,7 +18,7 @@ const EmojiLayer: React.FunctionComponent<EmojiType> = () => {
 
   return (
     <React.Fragment>
-      <div className="emoji-layer flex flex-row items-center justify-between select-none">
+      <div className="emoji-layer flex flex-row items-center justify-between select-none max-sm:grid max-sm: max-sm:grid-cols-4 max-sm:mx-4 max-sm:justify-items-center">
         {emojiLayerRef.current?.map((emoji: EmojiType, emojiIndex: number) => (
             <React.Fragment key={emojiIndex}>
               {emoji?.isActive
@@ -35,7 +35,7 @@ const EmojiLayer: React.FunctionComponent<EmojiType> = () => {
                         height="120"
                         key={emojiIndex}
                         alt={emoji?.name}
-                        className={`hover:scale-105 transition-all ${emoji?.isHighlighted && "hover:brightness-90 animate-bounce transition-all"}`}
+                        className={`hover:scale-105 transition-all  ${emoji?.isHighlighted && "hover:brightness-90 animate-bounce transition-all"}`}
                         priority
                       />
                       <Tooltip anchorId={`hightable-tooltip__${emoji?.name}`} />
@@ -62,7 +62,7 @@ const EmojiLayer: React.FunctionComponent<EmojiType> = () => {
                     height="120"
                     key={emojiIndex}
                     alt={emoji?.name}
-                    className={`hover:scale-105 transition-all ${emoji?.isHighlighted && "animate-bounce transition-transform"}`}
+                    className={`hover:scale-105 transition-all max-sm:w-[70px] ${emoji?.isHighlighted && "animate-bounce transition-transform"}`}
                     priority
                   />
               }

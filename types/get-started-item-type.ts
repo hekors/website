@@ -1,5 +1,8 @@
 type GetStartedItemType = {
-  title?: string;
+  title?: {
+    emoji?: string;
+    text?: string;
+  };
   bgColor?: string;
   description?: string[];
   path?: string | any;

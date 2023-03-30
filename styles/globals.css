@@ -49,3 +49,8 @@ html {
 *::-webkit-scrollbar-thumb:hover {
   background: #bbbbbb80;
 }
+
+/* Callout Override, Events Page */
+.small-callout >  span.callout-icon-wrapper > img{
+      @apply max-sm:w-[44px]
+}
