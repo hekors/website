@@ -36,21 +36,21 @@
     }
   },
   {
-    "picture": "/team/ayush.jpg",
+    "picture": "/team/nishant.jpg",
     "fullName": {
-      "firstName": "Ayush",
-      "lastName": "Soni"
+      "firstName": "Nishant",
+      "lastName": "Jain"
     },
     "isAvenger": true,
     "directWebsite": {
-      "label": "website/ayushsoni1010",
-      "link": "http://ayushsoni1010.com"
+      "label": "website/devnishant",
+      "link": "http://devnishant.vercel.app"
     },
     "socialProfile": {
-      "twitterUsername": "ayushsoni1010",
-      "instagramUsername": "aayushsoni1010",
-      "linkedInUsername": "ayushsoni1010",
-      "githubUsername": "ayushsoni1010"
+      "twitterUsername": "devnishant10",
+      "instagramUsername": "nishant.jain_10",
+      "linkedInUsername": "nishantj2002",
+      "githubUsername": "nishantjain10"
     }
   }
 ]
