@@ -46,7 +46,7 @@ const UpcomingSessions: React.FunctionComponent = () => {
                   <SessionCardSkeleton visibility={40} />
                 </div>
               )}
-              <div className="flex flex-row items-center justify-end gap-6 hidden max-sm:flex-col max-sm:flex max-sm:justify-center max-sm:items-center max-sm:mt-12">
+              <div className="flex flex-row items-center justify-end gap-6 max-sm:flex-col max-sm:flex max-sm:justify-center max-sm:items-center max-sm:mt-12">
             <Button type="secondary" shade="product-pink">
               {"All Hackathons"}
             </Button>
