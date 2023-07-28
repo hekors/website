@@ -2,5 +2,9 @@
   {
     "label": "🗓️ Past Events",
     "path": "/events/past-events"
+  },
+  {
+    "label": "🚀 Community Projects",
+    "path": "/projects"
   }
 ]

@@ -10,7 +10,7 @@ const communityLinks: Array<FooterOptionType> = [
   },
   {
     title: "Join Team",
-    link: "https://github.com/hekors/.github/tree/master/profile",
+    link: "https://tally.so/r/w2a8xg",
   },
   {
     title: "Community Gallery",

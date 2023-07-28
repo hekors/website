@@ -16,7 +16,7 @@ const Callout: React.FunctionComponent<CalloutType> = (
         {...props}
       >
         <span className="callout-icon-wrapper">
-          <Image
+          <Image className="max-sm:w-[60%]"
             src="/callout-icon.svg"
             alt="callout"
             width="24"
